@@ -18,6 +18,30 @@ but nobody appears to have used a Fourier basis as the *steering* mechanism for 
 
 Question: does Fourier-basis steering work, and does it buy anything a spline doesn't?
 
+**Bottom line up front.**
+
+1. **The core method is prior art.** Feucht et al., *Arithmetic in the Wild*
+   ([2605.01148](https://arxiv.org/abs/2605.01148)) §4, "Fourier Probes Trained on Addition Can
+   Steer Cyclic Tasks", already steers weekdays and months **on Llama-3.1-8B** by computing a
+   target phase `θ' = n'(2π/T)`, caching the observed radius and rotating to that phase, with a
+   scaling factor α=10. That is this project's method, its phase/radius separation, and its
+   large-amplitude requirement — same model, same concepts. They also show the operative periods
+   are task-agnostic base-10 ones (2, 5, 10) rather than the concept's own period, which
+   reframes the harmonic sweep below.
+2. **Fourier ≡ PCA here.** A matched-dimension control (Finding 2b) shows the Fourier basis
+   steers identically to plain PCA on the same centroids, so the Fourier framing buys nothing for
+   discrete targets.
+3. **What survives** is narrow: a 2D circle is far too small a subspace for control (months cannot
+   be steered with one at any amplitude; weekdays need amplitude 4), while random subspaces of the
+   same dimension fail entirely.
+4. **No spline baseline was ever run**, so nothing here supports any claim against the paper's
+   method.
+
+> **This document has been corrected after an external review** (`RESEARCH_REVIEW.md`), which
+> found a coefficient bug, an invalid falsification, prompt leakage between fitting and testing,
+> and several overstated numbers. Corrected claims are marked inline. The review's mathematical
+> claims were independently reproduced with `audit_math.py`.
+
 ## Setup
 
 | | |
@@ -46,7 +70,12 @@ Baseline task accuracy is 90% (38/42 prompts answered correctly), so the model g
 performs the task. This protocol matters: an earlier version that took the last token of
 sentences like `"Today is Monday."` was fitting the `"."` token, and produced a total null result.
 
-### 2. Harmonics are load-bearing — the circle (K=1) is not enough
+### 2. A 2D circle is not enough — you need most of the concept's subspace
+
+> **Superseded in part.** I originally read this as evidence that *harmonics* are
+> load-bearing. A control experiment (Finding 2b) shows the operative variable is
+> subspace **dimension**, not frequency structure. The empirical numbers below stand;
+> the "harmonics" interpretation does not.
 
 Weekdays, hits = target became top-1 prediction (out of 4 targets):
 
@@ -72,22 +101,69 @@ Months are worse and need more harmonics (6 targets):
 The circle **never** works for months at any amplitude tested; K=5 reaches 6/6.
 P(September) peaks at 0.904, P(August) at 0.941.
 
-### 3. Harmonics and amplitude substitute for each other
+### 2b. Control: it is dimension, not harmonics
 
-More harmonics → less amplitude needed for the same effect (weekdays: K=3 works at amp 1,
-K=1 needs amp 4; months: K=3 needs amp 8, K=5 needs amp 6). Cranking amplitude is
-**compensating for a truncated basis** — i.e. pushing off-manifold to make up for
-discarding harmonics.
+Comparing bases at **matched subspace dimension** — Fourier `span{A_k,B_k}`, top-d PCA of the
+centroids, and d random orthonormal directions (`basis_control.py`):
 
-### 4. Using *all* harmonics overfits
+Weekdays, dim 6, amp 1.0:
 
-For months, K=6 (5/6) underperforms K=5 (6/6), even though K=6 captures 100% of the centroid
-variance. April actively degrades as amplitude rises (0.155 at amp 2 → 0.064 at amp 8).
-For n=12, k=6 is the Nyquist component (alternating ±1) and is almost certainly fitting noise.
-**There is a sweet spot; "more harmonics is better" is false.**
+| basis | Mon | Sat | Sun | Tue | hits |
+|---|---|---|---|---|---|
+| fourier K=3 | 0.310 | 0.420 | 0.286 | 0.260 | 4/4 |
+| **pca d=6** | 0.310 | 0.420 | 0.286 | 0.259 | 4/4 |
+| random d=6 | 0.001 | 0.002 | 0.001 | 0.001 | 0/4 |
 
-The required number of harmonics tracks how non-circular the concept is, as the power
-spectrum predicts: weekday fundamental ≈ 0.56, month fundamental ≈ 0.44.
+Identical to three decimals — and necessarily so: 7 centroids, once centred, span exactly 6
+dimensions, and Fourier K=3 supplies 2×3 = 6 basis vectors spanning that same space. They are
+the same subspace in different coordinates. For months at dim 10, PCA is marginally *better*
+than Fourier (amp 6: 0.239/0.409/0.551/0.393 vs 0.193/0.338/0.566/0.373).
+
+**So the Fourier basis buys nothing over PCA for steering to observed category targets.** The
+operative variable is how much of the concept's centroid subspace you span.
+
+What survives, and is non-trivial: **random subspaces fail completely** (0/4, P≈0.001, at dims
+2, 6 and 10). "More dimensions" only helps if they are *the concept's* dimensions.
+
+Untested, and the only remaining Fourier-specific capability: a Fourier fit provides a
+**continuous intrinsic coordinate**, so it can target `t = 2.5` (between Tuesday and Wednesday)
+or interpolate smoothly. PCA only reaches observed centroids. Both were evaluated at discrete
+indices here, so this experiment says nothing about it.
+
+### 3. Subspace dimension and amplitude substitute for each other
+
+More of the concept subspace → less amplitude needed for the same effect (weekdays: dim 6 works
+at amp 1, dim 2 needs amp 4; months: dim 6 needs amp 8, dim 10 needs amp 6). Cranking amplitude
+**compensates for a truncated basis**.
+
+Measured off-manifold distance (distance to nearest centroid / mean inter-centroid distance)
+confirms the "compensation" is literal: the successful low-amplitude dim-6 weekday setting sits
+at 1.05, essentially on the manifold, while amp 4 reaches 2.23 and months reach 4.75.
+
+**But off-manifold is not harmful here**: the best month results (P=0.893) occur at the
+*farthest* off-manifold point (4.75). Either off-manifold excursions are benign in this setting,
+or top-1 accuracy is the wrong harm metric (an unrelated-token KL measurement would settle it —
+see Open Questions).
+
+### 4. ~~Exceeding the span of the centroids overfits~~ — RETRACTED, coefficient bug
+
+For months, K=6 (5/6) underperforms K=5 (6/6), and April degrades as amplitude rises
+(0.155 at amp 2 → 0.064 at amp 8). I originally read this as Nyquist-frequency noise.
+
+**This is a bug in `fourier_fit`, not a finding.** The code applies `2/n` to every cosine
+coefficient. For even `n`, the `k = n/2` (Nyquist) cosine requires `1/n`, and its sine is
+identically zero on the integer sampling grid. So for n=12 the alternating component is
+reconstructed at **twice** its true amplitude, and `B_6` is a zero vector — which means
+`subspace_basis` hands QR a zero column and gets an arbitrary direction back.
+
+Verified independently (`audit_math.py`): on a pure alternating n=12 signal the current formula
+gives max reconstruction error **1.0** (i.e. 2× the signal) versus **1.7e-15** corrected.
+Odd n is unaffected (error 6.7e-16), so **weekdays were never affected — only months at K=6.**
+
+The K=6 row should be disregarded until refit with `A_{n/2} = (1/n)·Σ_d C[d]·(−1)^d`, no `B_{n/2}`,
+and a rank-revealing SVD with a tolerance instead of QR. Correcting it need not make K=6 better;
+it makes the comparison interpretable. The n−1 rank ceiling still holds as a matter of linear
+algebra.
 
 ### 5. Amplitude/phase separation is real but partly an artifact
 
@@ -120,8 +196,17 @@ Principal angles between the weekday and month subspaces:
 
 | subspaces | angles (deg) |
 |---|---|
-| 2-dim circles (K=1) | 82.6, 83.2 |
+| 2-dim **PCA planes** (not Fourier fundamentals — see caveat) | 82.6, 83.2 |
 | 6-dim vs 10-dim (K=3 vs K=5) | **51.3**, 58.3, 66.5, 72.6, 80.7, 84.3 |
+
+> **Caveat.** The 2-dim figures come from top-2 PCA planes (`novel.py`), *not* from the Fourier
+> fundamental subspaces, so "fundamentals are orthogonal, harmonics entangle" is not yet a
+> measured comparison — the two rows use different bases. Frequency-specific angles need
+> recomputing before that phrasing is justified. Also, a minimum principal angle of 51°, not 0°,
+> means the subspaces need not intersect at all: independent latent coordinates can be encoded in
+> non-orthogonal directions and recovered with a dual basis, so this is **not** evidence of
+> irreducible semantic entanglement. Some of the observed interference may come from the
+> sequential-overwrite operator rather than the geometry.
 
 Two random 6- and 10-dim subspaces in 4096 dimensions would sit at ~87–90°, so 51.3°
 (cos ≈ 0.63) is far from chance. **The two concepts look independent at the fundamental and
@@ -140,22 +225,33 @@ Recorded because several intermediate claims were wrong, and the errors were inf
 3. **Reported crosstalk of 2.26% (Finding 6). Invalid** — the control was dead: the month edit
    at that amplitude installed nothing, so "no interference" was vacuous. A non-interference
    result requires proving the *perturbing* edit is potent.
-4. **Hypothesised RMSNorm caused the crosstalk. Falsified** — renormalising the composed edit to
-   the original norm did not reduce interference (0.065 → 0.070) and damaged the steering itself.
-   Norm inflation was only 1.24–1.31×, too small to explain a 25–35% effect.
+4. **Hypothesised RMSNorm caused the crosstalk, then claimed to have falsified it. The test was
+   invalid** — renormalising the whole state cannot probe normalisation-mediated interference,
+   because RMSNorm is scale-invariant: `RMSNorm(c·x) = RMSNorm(x)` exactly (verified, difference
+   0.0 in `audit_math.py`). The experiment establishes only that *that particular remedy* fails
+   (interference 0.065 → 0.070, and it damaged the steering itself). RMSNorm causation is neither
+   confirmed nor ruled out. In a pre-norm transformer global rescaling also shifts the
+   residual-to-branch balance, confounding it further.
 5. **Basis-mismatch bug**: the circle was fit on end-of-sentence tokens and then applied to
    rotate a mid-sentence day-word token. Different activation populations → the intervention was
    meaningless and every result was null. Caught by a sanity check (injecting zeros must change
    the output; it did, proving the hook worked and the basis was at fault).
 6. **Used PCA + polar coordinates instead of an actual Fourier basis.** This is the `K=1`
-   special case, and it silently discarded exactly the harmonics that Findings 2–4 show are
-   load-bearing.
+   special case, and it silently discarded most of the concept's subspace (Findings 2, 2b).
+7. **Attributed the K-ladder result to harmonics. Wrong** — a matched-dimension control
+   (Finding 2b) shows Fourier and PCA steer identically, because for n categories both span the
+   same (n−1)-dimensional centroid space. I ran the interesting-sounding interpretation for
+   several experiments before running the control that distinguished it from the boring one.
+   The correct claim is about subspace dimension; "harmonics" was a roundabout way of saying it.
 
 ## Limitations
 
-- **No spline comparison.** Every comparison here is Fourier-K against Fourier-K=1 (my own
-  circle), never against the paper's actual TPS/cubic spline method. Claims of Fourier
-  *advantage* are therefore unsupported; only the K-ladder results are established.
+- **No spline comparison.** Every comparison here is against Fourier-K=1 or PCA, never against
+  the paper's actual TPS/cubic spline method. Claims of Fourier *advantage* over their method are
+  unsupported — and after Finding 2b there is no evidence of Fourier advantage over plain PCA
+  either, for discrete targets.
+- **Continuous interpolation never tested**, which is the one capability a Fourier fit has that
+  PCA-to-centroids does not.
 - **No statistics.** One test prompt per steering direction, 4–6 targets, single seed,
   no error bars.
 - **Single-token readout.** Day and month answers compete for the same next-token slot, so
@@ -163,6 +259,26 @@ Recorded because several intermediate claims were wrong, and the errors were inf
   separate readout positions.
 - `"May"` is a confound as a month target (also a common modal verb), inflating its token
   probability for non-calendar reasons.
+- **The steering test prompts are inside the centroid fitting set.** `"Today is Wednesday.
+  Tomorrow is"` is one of the six prompts used to build the *Thursday* centroid, and `"The month
+  after February is"` builds the *March* centroid (verified statically in `audit_math.py`). The
+  held-out decoding check in Finding 1 does not make the later steering tests held out.
+- **Findings 6–7 are preservation tests, not joint control.** A weekday prompt is scored only for
+  its weekday and a month prompt only for its month, so no single state was shown to support both
+  requested labels at once. "Composability works" overstates it.
+- **The magnitude matching is asymmetric.** In `compose_matched.py` only the *perturbing* edit is
+  rescaled; each primary edit keeps its own amplitude (weekday 24.4, month 54.3). The match
+  constant was also derived from a single Monday edit, and different targets have different norms.
+  Potency was not re-verified at the rescaled strengths, so a preserved primary answer could
+  simply mean the secondary edit stopped working.
+- **Sign convention error**: the month figure reported as "−4.8%" is a 4.8% *increase* in
+  P(target), not a degradation.
+- The `0.56 / 0.44` "fundamental" power figures quoted under Finding 4's original wording came
+  from log 01's sentence-ending activation population, which the corrected protocol replaced —
+  they should not be merged with the answer-conditioned results. Projection-into-span variance is
+  also not the same quantity as Fourier spectral power.
+- Random subspaces are a weak control for anisotropic residual activations; label-permutation
+  controls would be stronger, though they cannot change the full centred span.
 - The exploratory GPT-2 phase (layer sweeps, list-vs-arithmetic prompt comparisons, induction
   head observations) was lost to a container restart that wiped `/tmp`. Those numbers appear in
   Findings/Corrections but are **not reproducible from this repo**.
@@ -187,12 +303,22 @@ Recorded because several intermediate claims were wrong, and the errors were inf
 4. **Which frequencies do downstream layers actually read?** Ablate individual harmonics and
    measure behavioural effect — the Nanda "key frequencies" question, which connects this
    geometry to circuit mechanism. Splines do not hook into this at all.
+5. **Continuous-coordinate steering** (the open Fourier-specific question from Finding 2b): target
+   non-integer `t` and check whether outputs interpolate smoothly between adjacent days, or jump.
+   Smooth interpolation would be a capability PCA-to-centroids lacks; a jump would mean the
+   continuous coordinate is fiction.
+6. **Is off-manifold actually harmful?** Finding 3 shows best results at the farthest off-manifold
+   point, contradicting the paper's framing. Measure KL divergence from baseline on
+   *unrelated* tokens at matched target-hit rate, comparing low-dim/high-amp against
+   high-dim/low-amp. If collateral damage is higher for the off-manifold route, top-1 accuracy was
+   simply hiding the cost.
 
 ## Files
 
 | file | what it does |
 |---|---|
 | `fourier_steer_real.py` | **Core**: Fourier fit + K-harmonic steering; weekday and month K-sweeps (Findings 2–4) |
+| `basis_control.py` | **Key control**: Fourier vs PCA vs random at matched dimension, plus off-manifold distance (Finding 2b) |
 | `months_deep.py` | Months at K=3…6, full harmonic range (Finding 4) |
 | `compose_matched.py` | **Key**: magnitude-matched bidirectional composability + principal angles (Findings 6–7) |
 | `compose_fourier.py` | Bidirectional composability with potent Fourier handles (pre-matching) |
@@ -202,6 +328,8 @@ Recorded because several intermediate claims were wrong, and the errors were inf
 | `norm_crosstalk.py` | RMSNorm hypothesis test (falsified, Correction 4) |
 | `llama_full.py` | First pipeline — contains the basis-mismatch bug (Correction 5); kept for the record |
 | `results/*.log` | Raw stdout from each run, numbered in execution order |
+| `RESEARCH_REVIEW.md` | External critical review: prior art, bugs, overstated claims, and a proposed next experiment. Not written by the author of the experiments. |
+| `audit_math.py` | Dependency-free reproduction of the review's mathematical claims (Nyquist coefficient, RMSNorm scale-invariance, prompt-set overlap). `python3 audit_math.py` |
 
 Scripts are standalone: `python <script>.py` with `torch`, `transformers`, `numpy`.
 They download the model from HuggingFace (~16GB) and run on CPU in ~1–2 min per experiment
