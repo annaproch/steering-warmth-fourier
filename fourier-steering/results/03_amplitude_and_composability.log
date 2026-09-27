@@ -1,0 +1,75 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 11090.50it/s]
+loaded (1s)
+day centroids done
+month centroids done
+day 2D var=0.572  month 2D var=0.382  principal angles=82.6/83.2 deg
+
+baseline: top=' Thursday' day-mass=0.505 day-entropy=0.26 bits argmax-day=Thursday
+
+==============================================================================
+A) AMPLITUDE/PHASE SEPARATION  (does radius control confidence, phase control identity?)
+==============================================================================
+
+  phase fixed at Monday:
+   r_scale  argmax-day  P(target)  day-mass  entropy      top token
+       0.0    Thursday     0.0157    0.3689     0.95     'Thursday'
+       0.5    Thursday     0.0673    0.2977     1.76     'Thursday'
+       1.0      Monday     0.1619    0.2878     1.80       'Monday'
+       1.5      Monday     0.2553    0.3314     1.18       'Monday'
+       2.0      Monday     0.3093    0.3663     0.86       'Monday'
+       3.0      Monday     0.3981    0.4396     0.56       'Monday'
+       4.0      Monday     0.4742    0.5081     0.42       'Monday'
+       6.0      Monday     0.6307    0.6503     0.22       'Monday'
+
+  phase fixed at Saturday:
+   r_scale  argmax-day  P(target)  day-mass  entropy      top token
+       0.0    Thursday     0.0101    0.3689     0.95     'Thursday'
+       0.5    Thursday     0.0424    0.3006     1.67     'Thursday'
+       1.0    Saturday     0.1158    0.2779     1.97          'the'
+       1.5    Saturday     0.1870    0.3058     1.57     'Saturday'
+       2.0    Saturday     0.2600    0.3563     1.20     'Saturday'
+       3.0    Saturday     0.3535    0.4259     0.83     'Saturday'
+       4.0    Saturday     0.3967    0.4513     0.64     'Saturday'
+       6.0    Saturday     0.4574    0.4886     0.39     'Saturday'
+
+  phase fixed at Sunday:
+   r_scale  argmax-day  P(target)  day-mass  entropy      top token
+       0.0    Thursday     0.0147    0.3689     0.95     'Thursday'
+       0.5    Thursday     0.0499    0.2763     1.95     'Thursday'
+       1.0      Sunday     0.0962    0.2573     2.11          'the'
+       1.5      Sunday     0.1291    0.2794     1.79          'the'
+       2.0      Sunday     0.1532    0.3063     1.61          'the'
+       3.0      Sunday     0.1663    0.3164     1.48          'the'
+       4.0      Sunday     0.1687    0.3049     1.42          'the'
+       6.0      Sunday     0.1523    0.2464     1.29          'the'
+
+==============================================================================
+B) COMPOSABILITY  (does perturbing the MONTH coordinate disturb WEEKDAY steering?)
+==============================================================================
+
+   day target | month=     None | month=    March | month=     July | month= November
+       Monday |          0.1619 |          0.1617 |          0.1565 |          0.1640
+     Thursday |          0.4800 |          0.4887 |          0.4756 |          0.4782
+     Saturday |          0.1158 |          0.1086 |          0.1149 |          0.1110
+       Sunday |          0.0962 |          0.0952 |          0.0977 |          0.0954
+
+  interference analysis (P(target day) should depend on day target, not month target):
+        Monday: no-month=0.1619  with-month range=[0.1565, 0.1640]  max |shift|=0.0054
+      Thursday: no-month=0.4800  with-month range=[0.4756, 0.4887]  max |shift|=0.0087
+      Saturday: no-month=0.1158  with-month range=[0.1086, 0.1149]  max |shift|=0.0072
+        Sunday: no-month=0.0962  with-month range=[0.0952, 0.0977]  max |shift|=0.0016
+
+    SIGNAL  (spread from changing day target)   = 0.3839
+    CROSSTALK (max shift from month perturbation) = 0.0087
+    crosstalk/signal = 2.26%   (low = composable)
+
+  control: does the month rotation have ANY causal effect? (month-answer prompt, month steered)
+    baseline top=' March' P=0.135
+    month target     March: top=       'March' P(target)=0.1368   <-- steered!
+    month target      July: top=         'the' P(target)=0.0099
+    month target  November: top=         'the' P(target)=0.0094
+
+total 96s
+
+[exited with code 0]

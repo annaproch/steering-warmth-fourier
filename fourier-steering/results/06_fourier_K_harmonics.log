@@ -1,0 +1,61 @@
+loaded (1s)
+
+============================================================================
+WEEKDAYS: test prompt 'Today is Wednesday. Tomorrow is'
+baseline top=' Thursday' P=0.490
+  K=1: subspace dim= 2  centroid variance captured=0.569
+  K=2: subspace dim= 4  centroid variance captured=0.760
+  K=3: subspace dim= 6  centroid variance captured=1.000
+
+--- WEEKDAYS, K=1 harmonics (subspace dim 2) ---
+    amp |      Mond |      Satu |      Sund |      Tues | hits
+    1.0 |    0.134  |    0.097  |    0.130  |    0.023  | 0/4
+    2.0 |    0.277* |    0.221* |    0.200* |    0.078  | 3/4
+    4.0 |    0.432* |    0.364* |    0.235* |    0.243* | 4/4
+
+--- WEEKDAYS, K=2 harmonics (subspace dim 4) ---
+    amp |      Mond |      Satu |      Sund |      Tues | hits
+    1.0 |    0.188* |    0.374* |    0.148  |    0.216* | 3/4
+    2.0 |    0.398* |    0.526* |    0.285* |    0.417* | 4/4
+    4.0 |    0.622* |    0.561* |    0.327* |    0.605* | 4/4
+
+--- WEEKDAYS, K=3 harmonics (subspace dim 6) ---
+    amp |      Mond |      Satu |      Sund |      Tues | hits
+    1.0 |    0.310* |    0.420* |    0.286* |    0.260* | 4/4
+    2.0 |    0.554* |    0.543* |    0.489* |    0.530* | 4/4
+    4.0 |    0.763* |    0.506* |    0.555* |    0.703* | 4/4
+
+============================================================================
+MONTHS: test prompt 'The month after February is'
+baseline top=' March' P=0.135
+  K=1: subspace dim= 2  centroid variance captured=0.381
+  K=2: subspace dim= 4  centroid variance captured=0.623
+  K=3: subspace dim= 6  centroid variance captured=0.721
+  K=4: subspace dim= 8  centroid variance captured=0.807
+  K=5: subspace dim=10  centroid variance captured=0.905
+  K=6: subspace dim=12  centroid variance captured=1.000
+
+--- MONTHS, K=1 harmonics (subspace dim 2) ---
+    amp |      July |      Nove |      Sept |      June | hits
+    1.0 |    0.007  |    0.009  |    0.034  |    0.007  | 0/4
+    2.0 |    0.012  |    0.020  |    0.039  |    0.014  | 0/4
+    4.0 |    0.019  |    0.028  |    0.048  |    0.021  | 0/4
+    6.0 |    0.021  |    0.027  |    0.061  |    0.024  | 0/4
+
+--- MONTHS, K=2 harmonics (subspace dim 4) ---
+    amp |      July |      Nove |      Sept |      June | hits
+    1.0 |    0.032  |    0.068  |    0.030  |    0.055  | 0/4
+    2.0 |    0.041  |    0.090  |    0.053  |    0.046  | 0/4
+    4.0 |    0.040  |    0.095  |    0.079  |    0.024  | 0/4
+    6.0 |    0.041  |    0.141* |    0.130  |    0.028  | 1/4
+
+--- MONTHS, K=3 harmonics (subspace dim 6) ---
+    amp |      July |      Nove |      Sept |      June | hits
+    1.0 |    0.030  |    0.077  |    0.065  |    0.049  | 0/4
+    2.0 |    0.053  |    0.104  |    0.097  |    0.049  | 0/4
+    4.0 |    0.062  |    0.122  |    0.120  |    0.026  | 0/4
+    6.0 |    0.084  |    0.217* |    0.192* |    0.034  | 2/4
+
+total 118s
+
+[exited with code 0]
