@@ -1,0 +1,25 @@
+loaded+fit (72s)
+
+=== 1. WEEKDAY steering (K=3,amp=2), MONTH coordinate perturbed (K=5,amp=6) ===
+   day target |       None |       July |  September |     August
+       Monday |     0.554* |     0.033  |     0.059  |     0.113 
+     Saturday |     0.543* |     0.187* |     0.086  |     0.108 
+       Sunday |     0.489* |     0.102  |     0.205  |     0.113 
+      Tuesday |     0.530* |     0.094  |     0.141  |     0.057 
+  weekday top-1: alone 4/4, under month perturbation 1/12
+  mean P(day target) drop from month perturbation = +0.4208
+
+=== 2. MONTH steering (K=5,amp=6), WEEKDAY coordinate perturbed (K=3,amp=2) ===
+   month target |       None |     Monday |   Saturday |    Tuesday
+           July |     0.193* |     0.270* |     0.152* |     0.224*
+      September |     0.566* |     0.454* |     0.238* |     0.597*
+         August |     0.373* |     0.610* |     0.431* |     0.681*
+       November |     0.338* |     0.316* |     0.298* |     0.457*
+  month top-1: alone 4/4, under weekday perturbation 12/12
+  mean P(month target) drop from weekday perturbation = -0.0264
+
+  relative degradation: weekday 79.6%, month -7.2%
+
+total 91s
+
+[exited with code 0]

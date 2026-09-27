@@ -1,0 +1,31 @@
+loaded+fit (73s)
+
+weekday subspace dim 6, month subspace dim 10
+principal angles: 51.3, 58.3, 66.5, 72.6, 80.7, 84.3 deg  (90 = orthogonal)
+
+||delta|| weekday(K=3,amp=2) = 24.39   ||delta|| month(K=5,amp=6) = 54.32   ratio = 2.23x
+||x|| weekday state = 41.9, month state = 41.1
+
+matching both perturbation magnitudes to ||delta||=24.39
+
+=== 1. WEEKDAY steering, MONTH perturbation (magnitude-matched) ===
+   day target |       None |       July |  September |     August
+       Monday |     0.554* |     0.390* |     0.369* |     0.514*
+     Saturday |     0.543* |     0.520* |     0.381* |     0.537*
+       Sunday |     0.489* |     0.342* |     0.438* |     0.400*
+      Tuesday |     0.530* |     0.407* |     0.458* |     0.430*
+  weekday top-1: alone 4/4, perturbed 12/12;  mean drop +0.0968 (18.3% relative)
+
+=== 2. MONTH steering, WEEKDAY perturbation (magnitude-matched) ===
+   month target |       None |     Monday |   Saturday |    Tuesday
+           July |     0.193* |     0.249* |     0.150* |     0.220*
+      September |     0.566* |     0.457* |     0.271* |     0.593*
+         August |     0.373* |     0.575* |     0.397* |     0.580*
+       November |     0.338* |     0.334* |     0.303* |     0.491*
+  month top-1: alone 4/4, perturbed 12/12;  mean drop -0.0175 (-4.8% relative)
+
+SYMMETRY CHECK  weekday degradation 18.3% vs month degradation -4.8%
+
+total 92s
+
+[exited with code 0]

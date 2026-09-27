@@ -1,0 +1,134 @@
+loading model...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 12388.65it/s]
+loaded in 2s; n_layers=32
+single forward pass: 0.6s
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+  ' Monday' -> 1 token(s): [' Monday']
+  ' Tuesday' -> 1 token(s): [' Tuesday']
+  ' Wednesday' -> 1 token(s): [' Wednesday']
+
+building day centroids (all layers)...
+    ...Monday
+    ...Tuesday
+    ...Wednesday
+    ...Thursday
+    ...Friday
+    ...Saturday
+    ...Sunday
+building month centroids (all layers)...
+    ...January
+    ...February
+    ...March
+    ...April
+    ...May
+    ...June
+    ...July
+    ...August
+    ...September
+    ...October
+    ...November
+    ...December
+cached centroids -> /home/agent/llama_centroids.npz
+
+=== Days @ layer 28: Fourier power ===
+  k=0:0.000  k=1:0.282  k=2:0.130  k=3:0.088  k=4:0.088  k=5:0.130  k=6:0.282
+  fundamental (k=1 + k=6) = 0.5640
+  2D-subspace var explained = 0.6169
+
+=== Months @ layer 28: Fourier power ===
+  k=0:0.000  k=1:0.221  k=2:0.126  k=3:0.058  k=4:0.046  k=5:0.033  k=6:0.033  k=7:0.033  k=8:0.046  k=9:0.058  k=10:0.126  k=11:0.221
+  fundamental (k=1 + k=11) = 0.4426
+  2D-subspace var explained = 0.4529
+
+=== Days @ layer 28: low-pass reconstruction + held-out decoding ===
+ k_max   recon R2  decode acc
+     0     0.0000      14.3%
+     1     0.5640      42.9%
+     2     0.8245      57.1%
+     3     1.0000      85.7%
+
+=== Months @ layer 28: low-pass reconstruction + held-out decoding ===
+ k_max   recon R2  decode acc
+     0     0.0000       8.3%
+     1     0.4426      41.7%
+     2     0.6941      41.7%
+     3     0.8091      33.3%
+     4     0.9008      41.7%
+     5     0.9666      50.0%
+     6     1.0000      50.0%
+
+=== Phase steering: 'Today is Wednesday. Tomorrow is' (patching token 3 = ' Wednesday') ===
+baseline top pred: ' Thursday' P=0.490
+
+--- layer 14 (2D var=0.711) ---
+    target  want next     top pred  P(top)  P(want)    Mon   Tue   Wed   Thu   Fri   Sat   Sun
+    Monday    Tuesday     Thursday   0.489    0.001  0.001 0.001 0.005 0.489 0.005 0.001 0.001
+   Tuesday  Wednesday     Thursday   0.492    0.005  0.001 0.001 0.005 0.492 0.006 0.001 0.001
+ Wednesday   Thursday     Thursday   0.493    0.493  0.001 0.002 0.005 0.493 0.006 0.001 0.001  <-- correct
+  Thursday     Friday     Thursday   0.495    0.007  0.001 0.001 0.004 0.495 0.007 0.001 0.001
+    Friday   Saturday     Thursday   0.489    0.002  0.001 0.001 0.004 0.489 0.007 0.002 0.001
+  Saturday     Sunday     Thursday   0.490    0.001  0.001 0.001 0.004 0.490 0.008 0.002 0.001
+    Sunday     Monday     Thursday   0.494    0.001  0.001 0.001 0.004 0.494 0.006 0.001 0.001
+  -> 1/7 successor predictions correct
+
+--- layer 20 (2D var=0.653) ---
+    target  want next     top pred  P(top)  P(want)    Mon   Tue   Wed   Thu   Fri   Sat   Sun
+    Monday    Tuesday     Thursday   0.474    0.002  0.001 0.002 0.005 0.474 0.005 0.001 0.001
+   Tuesday  Wednesday     Thursday   0.474    0.005  0.001 0.002 0.005 0.474 0.005 0.001 0.001
+ Wednesday   Thursday     Thursday   0.483    0.483  0.001 0.001 0.004 0.483 0.005 0.001 0.001  <-- correct
+  Thursday     Friday     Thursday   0.482    0.006  0.001 0.001 0.004 0.482 0.006 0.001 0.001
+    Friday   Saturday     Thursday   0.483    0.001  0.001 0.001 0.004 0.483 0.006 0.001 0.001
+  Saturday     Sunday     Thursday   0.492    0.001  0.001 0.001 0.004 0.492 0.007 0.001 0.001
+    Sunday     Monday     Thursday   0.492    0.001  0.001 0.002 0.004 0.492 0.005 0.001 0.001
+  -> 1/7 successor predictions correct
+
+--- layer 24 (2D var=0.645) ---
+    target  want next     top pred  P(top)  P(want)    Mon   Tue   Wed   Thu   Fri   Sat   Sun
+    Monday    Tuesday     Thursday   0.502    0.002  0.001 0.002 0.006 0.502 0.005 0.001 0.001
+   Tuesday  Wednesday     Thursday   0.504    0.005  0.001 0.002 0.005 0.504 0.006 0.001 0.001
+ Wednesday   Thursday     Thursday   0.495    0.495  0.001 0.001 0.004 0.495 0.006 0.001 0.001  <-- correct
+  Thursday     Friday     Thursday   0.491    0.006  0.001 0.001 0.004 0.491 0.006 0.001 0.001
+    Friday   Saturday     Thursday   0.483    0.002  0.001 0.001 0.004 0.483 0.006 0.002 0.001
+  Saturday     Sunday     Thursday   0.492    0.001  0.001 0.002 0.004 0.492 0.006 0.001 0.001
+    Sunday     Monday     Thursday   0.488    0.001  0.001 0.002 0.005 0.488 0.005 0.001 0.001
+  -> 1/7 successor predictions correct
+
+--- layer 28 (2D var=0.617) ---
+    target  want next     top pred  P(top)  P(want)    Mon   Tue   Wed   Thu   Fri   Sat   Sun
+    Monday    Tuesday     Thursday   0.493    0.002  0.001 0.002 0.005 0.493 0.005 0.001 0.001
+   Tuesday  Wednesday     Thursday   0.491    0.004  0.001 0.001 0.004 0.491 0.005 0.001 0.001
+ Wednesday   Thursday     Thursday   0.493    0.493  0.001 0.001 0.004 0.493 0.006 0.001 0.001  <-- correct
+  Thursday     Friday     Thursday   0.492    0.006  0.001 0.001 0.004 0.492 0.006 0.001 0.001
+    Friday   Saturday     Thursday   0.490    0.002  0.001 0.002 0.004 0.490 0.006 0.002 0.001
+  Saturday     Sunday     Thursday   0.491    0.001  0.001 0.002 0.004 0.491 0.005 0.001 0.001
+    Sunday     Monday     Thursday   0.490    0.001  0.001 0.002 0.005 0.490 0.005 0.001 0.001
+  -> 1/7 successor predictions correct
+
+--- layer 31 (2D var=0.622) ---
+    target  want next     top pred  P(top)  P(want)    Mon   Tue   Wed   Thu   Fri   Sat   Sun
+    Monday    Tuesday     Thursday   0.490    0.001  0.001 0.001 0.004 0.490 0.007 0.001 0.001
+   Tuesday  Wednesday     Thursday   0.490    0.004  0.001 0.001 0.004 0.490 0.007 0.001 0.001
+ Wednesday   Thursday     Thursday   0.490    0.490  0.001 0.001 0.004 0.490 0.007 0.001 0.001  <-- correct
+  Thursday     Friday     Thursday   0.490    0.007  0.001 0.001 0.004 0.490 0.007 0.001 0.001
+    Friday   Saturday     Thursday   0.489    0.001  0.001 0.001 0.004 0.489 0.007 0.001 0.001
+  Saturday     Sunday     Thursday   0.490    0.001  0.001 0.001 0.004 0.490 0.007 0.001 0.001
+    Sunday     Monday     Thursday   0.489    0.001  0.001 0.001 0.004 0.489 0.007 0.001 0.001
+  -> 1/7 successor predictions correct
+
+=== Amplitude sweep @ layer 28 (phase held at Wednesday) ===
+ scale     top pred   P(top)  P(Thursday)
+   0.0     Thursday    0.493        0.493
+   0.5     Thursday    0.493        0.493
+   1.0     Thursday    0.493        0.493
+   1.5     Thursday    0.484        0.484
+   2.0     Thursday    0.498        0.498
+   3.0     Thursday    0.499        0.499
+   5.0     Thursday    0.498        0.498
+
+=== Composability @ layer 28 ===
+  principal angles between weekday-plane and month-plane: 85.0 deg, 88.3 deg  (90 = independent)
+
+total time 117s
+
+[exited with code 0]

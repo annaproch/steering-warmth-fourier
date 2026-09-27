@@ -1,0 +1,27 @@
+loaded+fit (73s); ||x||=41.9
+
+norm inflation from each edit:
+  weekday only      : ||v||/||x|| = 1.240
+  weekday + month   : ||v||/||x|| = 1.313
+
+=== mode: raw ===
+   day target |       None |       July |   November |        May
+       Monday |     0.474* |     0.382* |     0.440* |     0.333*
+     Saturday |     0.397* |     0.378* |     0.322* |     0.257*
+      Tuesday |     0.356* |     0.384* |     0.255* |     0.344*
+  top-1: alone 3/3, perturbed 9/9
+  mean P drop from month perturbation = +0.0651
+  SIGNAL=0.1182 CROSSTALK=0.1409 crosstalk/signal=119.2%
+
+=== mode: norm-preserved ===
+   day target |       None |       July |   November |        May
+       Monday |     0.292* |     0.246* |     0.246* |     0.174*
+     Saturday |     0.292* |     0.241* |     0.213  |     0.180 
+      Tuesday |     0.223* |     0.220* |     0.115  |     0.155*
+  top-1: alone 3/3, perturbed 6/9
+  mean P drop from month perturbation = +0.0702
+  SIGNAL=0.0684 CROSSTALK=0.1181 crosstalk/signal=172.7%
+
+total 86s
+
+[exited with code 0]
