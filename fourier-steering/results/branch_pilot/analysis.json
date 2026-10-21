@@ -1,0 +1,30 @@
+{
+  "residual": {
+    "raw_n": 144,
+    "raw_correct": 0,
+    "clean_n": 114,
+    "clean_correct": 0,
+    "readouts_identical_to_source": 144
+  },
+  "cache_last": {
+    "raw_n": 24,
+    "raw_correct": 0,
+    "clean_n": 19,
+    "clean_correct": 0,
+    "readouts_identical_to_source": 24
+  },
+  "cache_full": {
+    "raw_n": 24,
+    "raw_correct": 21,
+    "clean_n": 19,
+    "clean_correct": 19,
+    "readouts_identical_to_source": 0
+  },
+  "controls": {
+    "baseline": "7/8",
+    "donors": "21/24",
+    "identity_checks_passed": 16,
+    "full_cache_matches_donor_readouts": 24,
+    "unit_tests_passed": 7
+  }
+}

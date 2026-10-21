@@ -1,0 +1,126 @@
+{
+  "eligible_layers": [],
+  "summary": {
+    "dm/0/baseline": {
+      "n": 8,
+      "day_ok": 1.0,
+      "month_ok": 1.0,
+      "joint_ok": 1.0
+    },
+    "dm/18/day": {
+      "n": 8,
+      "day_ok": 0.0,
+      "month_ok": 1.0,
+      "joint_ok": 0.0
+    },
+    "dm/24/day": {
+      "n": 8,
+      "day_ok": 0.75,
+      "month_ok": 1.0,
+      "joint_ok": 0.75
+    },
+    "dm/28/day": {
+      "n": 8,
+      "day_ok": 1.0,
+      "month_ok": 1.0,
+      "joint_ok": 1.0
+    },
+    "dm/18/month": {
+      "n": 8,
+      "day_ok": 1.0,
+      "month_ok": 0.0,
+      "joint_ok": 0.0
+    },
+    "dm/24/month": {
+      "n": 8,
+      "day_ok": 1.0,
+      "month_ok": 0.0,
+      "joint_ok": 0.0
+    },
+    "dm/28/month": {
+      "n": 8,
+      "day_ok": 1.0,
+      "month_ok": 0.0,
+      "joint_ok": 0.0
+    },
+    "dm/18/both": {
+      "n": 8,
+      "day_ok": 0.0,
+      "month_ok": 0.0,
+      "joint_ok": 0.0
+    },
+    "dm/24/both": {
+      "n": 8,
+      "day_ok": 0.75,
+      "month_ok": 0.0,
+      "joint_ok": 0.0
+    },
+    "dm/28/both": {
+      "n": 8,
+      "day_ok": 1.0,
+      "month_ok": 0.0,
+      "joint_ok": 0.0
+    },
+    "md/0/baseline": {
+      "n": 8,
+      "day_ok": 1.0,
+      "month_ok": 1.0,
+      "joint_ok": 1.0
+    },
+    "md/18/day": {
+      "n": 8,
+      "day_ok": 0.0,
+      "month_ok": 1.0,
+      "joint_ok": 0.0
+    },
+    "md/24/day": {
+      "n": 8,
+      "day_ok": 0.0,
+      "month_ok": 1.0,
+      "joint_ok": 0.0
+    },
+    "md/28/day": {
+      "n": 8,
+      "day_ok": 0.0,
+      "month_ok": 1.0,
+      "joint_ok": 0.0
+    },
+    "md/18/month": {
+      "n": 8,
+      "day_ok": 1.0,
+      "month_ok": 0.0,
+      "joint_ok": 0.0
+    },
+    "md/24/month": {
+      "n": 8,
+      "day_ok": 0.875,
+      "month_ok": 0.375,
+      "joint_ok": 0.25
+    },
+    "md/28/month": {
+      "n": 8,
+      "day_ok": 0.875,
+      "month_ok": 0.625,
+      "joint_ok": 0.5
+    },
+    "md/18/both": {
+      "n": 8,
+      "day_ok": 0.0,
+      "month_ok": 0.0,
+      "joint_ok": 0.0
+    },
+    "md/24/both": {
+      "n": 8,
+      "day_ok": 0.0,
+      "month_ok": 0.625,
+      "joint_ok": 0.0
+    },
+    "md/28/both": {
+      "n": 8,
+      "day_ok": 0.0,
+      "month_ok": 1.0,
+      "joint_ok": 0.0
+    }
+  },
+  "threshold": "At least 50% joint exact label accuracy for every edit type in both orders"
+}

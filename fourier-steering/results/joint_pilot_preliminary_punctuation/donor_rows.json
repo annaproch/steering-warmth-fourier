@@ -1,0 +1,643 @@
+[
+  {
+    "order": "dm",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      0
+    ],
+    "text": " \"Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      330,
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "donor_prediction": [
+      3,
+      0
+    ],
+    "delta_norm": 1.1162117719650269,
+    "text": " \"Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      330,
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "donor_prediction": [
+      3,
+      0
+    ],
+    "delta_norm": 4.37943172454834,
+    "text": " \"Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      330,
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "donor_prediction": [
+      3,
+      0
+    ],
+    "delta_norm": 8.839712142944336,
+    "text": " \"Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      330,
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "donor_prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 1.0535646677017212,
+    "text": " \"Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      330,
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "donor_prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 4.404886722564697,
+    "text": " \"Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      330,
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "donor_prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 6.561351299285889,
+    "text": " Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      7159,
+      11,
+      6186
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 1.2114688158035278,
+    "text": " \"Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      330,
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 6.208466529846191,
+    "text": " \"Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      330,
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 11.17819595336914,
+    "text": " \"Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      330,
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      2
+    ],
+    "text": " Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      7742,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "donor_prediction": [
+      null,
+      2
+    ],
+    "delta_norm": 0.9943732023239136,
+    "text": " \"Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      330,
+      41299,
+      11,
+      5587
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "donor_prediction": [
+      null,
+      2
+    ],
+    "delta_norm": 4.82065486907959,
+    "text": " 2018-03-06\n",
+    "prediction": [
+      null,
+      null
+    ],
+    "tokens": [
+      220,
+      679,
+      23,
+      12,
+      2839,
+      12,
+      2705,
+      198
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "donor_prediction": [
+      null,
+      2
+    ],
+    "delta_norm": 8.281420707702637,
+    "text": " 2018-03-06\n",
+    "prediction": [
+      null,
+      null
+    ],
+    "tokens": [
+      220,
+      679,
+      23,
+      12,
+      2839,
+      12,
+      2705,
+      198
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "donor_prediction": [
+      1,
+      7
+    ],
+    "delta_norm": 1.1208220720291138,
+    "text": " Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      7742,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "donor_prediction": [
+      1,
+      7
+    ],
+    "delta_norm": 4.365284442901611,
+    "text": " Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      7742,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "donor_prediction": [
+      1,
+      7
+    ],
+    "delta_norm": 6.371810436248779,
+    "text": " Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      7742,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "donor_prediction": [
+      null,
+      null
+    ],
+    "delta_norm": 1.5890893936157227,
+    "text": " \"Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      330,
+      41299,
+      11,
+      5587
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "donor_prediction": [
+      null,
+      null
+    ],
+    "delta_norm": 6.379271507263184,
+    "text": " 2018-03-06\n",
+    "prediction": [
+      null,
+      null
+    ],
+    "tokens": [
+      220,
+      679,
+      23,
+      12,
+      2839,
+      12,
+      2705,
+      198
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "donor_prediction": [
+      null,
+      null
+    ],
+    "delta_norm": 10.234562873840332,
+    "text": " 2018-03-06\n",
+    "prediction": [
+      null,
+      null
+    ],
+    "tokens": [
+      220,
+      679,
+      23,
+      12,
+      2839,
+      12,
+      2705,
+      198
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  }
+]

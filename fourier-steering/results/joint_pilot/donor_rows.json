@@ -1,0 +1,4882 @@
+[
+  {
+    "order": "dm",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      0
+    ],
+    "text": "Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "donor_prediction": [
+      3,
+      0
+    ],
+    "delta_norm": 1.122739315032959,
+    "text": "Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "donor_prediction": [
+      3,
+      0
+    ],
+    "delta_norm": 4.991044998168945,
+    "text": "Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "donor_prediction": [
+      3,
+      0
+    ],
+    "delta_norm": 10.183968544006348,
+    "text": "Thursday, January",
+    "prediction": [
+      3,
+      0
+    ],
+    "tokens": [
+      38888,
+      11,
+      6186
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "donor_prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 1.0770171880722046,
+    "text": "Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "donor_prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 4.208066463470459,
+    "text": "Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "donor_prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 6.34111213684082,
+    "text": "Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 0.9828401803970337,
+    "text": "Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 6.585241317749023,
+    "text": "Monday, January",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      36339,
+      11,
+      6186
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 12.190094947814941,
+    "text": "Thursday, January",
+    "prediction": [
+      3,
+      0
+    ],
+    "tokens": [
+      38888,
+      11,
+      6186
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      2
+    ],
+    "text": "Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      41299,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "donor_prediction": [
+      4,
+      2
+    ],
+    "delta_norm": 0.7100765109062195,
+    "text": "Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      41299,
+      11,
+      5587
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "donor_prediction": [
+      4,
+      2
+    ],
+    "delta_norm": 5.202908515930176,
+    "text": "Friday, March",
+    "prediction": [
+      4,
+      2
+    ],
+    "tokens": [
+      35720,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "donor_prediction": [
+      4,
+      2
+    ],
+    "delta_norm": 9.80029582977295,
+    "text": "Friday, March",
+    "prediction": [
+      4,
+      2
+    ],
+    "tokens": [
+      35720,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "donor_prediction": [
+      1,
+      7
+    ],
+    "delta_norm": 0.9008185863494873,
+    "text": "Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      41299,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "donor_prediction": [
+      1,
+      7
+    ],
+    "delta_norm": 4.704866886138916,
+    "text": "Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      41299,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "donor_prediction": [
+      1,
+      7
+    ],
+    "delta_norm": 6.8393330574035645,
+    "text": "Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      41299,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "donor_prediction": [
+      4,
+      7
+    ],
+    "delta_norm": 1.1508803367614746,
+    "text": "Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      41299,
+      11,
+      5587
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "donor_prediction": [
+      4,
+      7
+    ],
+    "delta_norm": 6.797214031219482,
+    "text": "Friday, March",
+    "prediction": [
+      4,
+      2
+    ],
+    "tokens": [
+      35720,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "donor_prediction": [
+      4,
+      7
+    ],
+    "delta_norm": 11.627681732177734,
+    "text": "Friday, March",
+    "prediction": [
+      4,
+      2
+    ],
+    "tokens": [
+      35720,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      4
+    ],
+    "text": "Wednesday, May",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      41619,
+      11,
+      3297
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "donor_prediction": [
+      5,
+      4
+    ],
+    "delta_norm": 1.8277082443237305,
+    "text": "Wednesday, May",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      41619,
+      11,
+      3297
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "donor_prediction": [
+      5,
+      4
+    ],
+    "delta_norm": 5.796626091003418,
+    "text": "Saturday, May",
+    "prediction": [
+      5,
+      4
+    ],
+    "tokens": [
+      34774,
+      11,
+      3297
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "donor_prediction": [
+      5,
+      4
+    ],
+    "delta_norm": 10.827022552490234,
+    "text": "Saturday, May",
+    "prediction": [
+      5,
+      4
+    ],
+    "tokens": [
+      34774,
+      11,
+      3297
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "donor_prediction": [
+      2,
+      9
+    ],
+    "delta_norm": 1.2515736818313599,
+    "text": "Wednesday, May",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      41619,
+      11,
+      3297
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "donor_prediction": [
+      2,
+      9
+    ],
+    "delta_norm": 3.945269823074341,
+    "text": "Wednesday, May",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      41619,
+      11,
+      3297
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "donor_prediction": [
+      2,
+      9
+    ],
+    "delta_norm": 5.926271915435791,
+    "text": "Wednesday, May",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      41619,
+      11,
+      3297
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "donor_prediction": [
+      5,
+      9
+    ],
+    "delta_norm": 2.7033212184906006,
+    "text": "Wednesday, May",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      41619,
+      11,
+      3297
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "donor_prediction": [
+      5,
+      9
+    ],
+    "delta_norm": 7.174183368682861,
+    "text": "Saturday, May",
+    "prediction": [
+      5,
+      4
+    ],
+    "tokens": [
+      34774,
+      11,
+      3297
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "donor_prediction": [
+      5,
+      9
+    ],
+    "delta_norm": 12.173307418823242,
+    "text": "Saturday, May",
+    "prediction": [
+      5,
+      4
+    ],
+    "tokens": [
+      34774,
+      11,
+      3297
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      6
+    ],
+    "text": "Thursday, July",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      38888,
+      11,
+      5887
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 1.5991536378860474,
+    "text": "Thursday, July",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      38888,
+      11,
+      5887
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 6.30880880355835,
+    "text": "Sunday, July",
+    "prediction": [
+      6,
+      6
+    ],
+    "tokens": [
+      37165,
+      11,
+      5887
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 10.572285652160645,
+    "text": "Sunday, July",
+    "prediction": [
+      6,
+      6
+    ],
+    "tokens": [
+      37165,
+      11,
+      5887
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "donor_prediction": [
+      3,
+      11
+    ],
+    "delta_norm": 1.041953206062317,
+    "text": "Thursday, July",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      38888,
+      11,
+      5887
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "donor_prediction": [
+      3,
+      11
+    ],
+    "delta_norm": 5.201993465423584,
+    "text": "Thursday, July",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      38888,
+      11,
+      5887
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "donor_prediction": [
+      3,
+      11
+    ],
+    "delta_norm": 7.738563537597656,
+    "text": "Thursday, July",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      38888,
+      11,
+      5887
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "donor_prediction": [
+      6,
+      11
+    ],
+    "delta_norm": 1.7115328311920166,
+    "text": "Thursday, July",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      38888,
+      11,
+      5887
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "donor_prediction": [
+      6,
+      11
+    ],
+    "delta_norm": 7.641795635223389,
+    "text": "Sunday, July",
+    "prediction": [
+      6,
+      6
+    ],
+    "tokens": [
+      37165,
+      11,
+      5887
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "donor_prediction": [
+      6,
+      11
+    ],
+    "delta_norm": 12.55419635772705,
+    "text": "Sunday, July",
+    "prediction": [
+      6,
+      6
+    ],
+    "tokens": [
+      37165,
+      11,
+      5887
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      8
+    ],
+    "text": "Friday, September",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      35720,
+      11,
+      6250
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "donor_prediction": [
+      0,
+      8
+    ],
+    "delta_norm": 0.7996286153793335,
+    "text": "Friday, September",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      35720,
+      11,
+      6250
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "donor_prediction": [
+      0,
+      8
+    ],
+    "delta_norm": 5.0362548828125,
+    "text": "Monday, September",
+    "prediction": [
+      0,
+      8
+    ],
+    "tokens": [
+      36339,
+      11,
+      6250
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "donor_prediction": [
+      0,
+      8
+    ],
+    "delta_norm": 9.720489501953125,
+    "text": "Monday, September",
+    "prediction": [
+      0,
+      8
+    ],
+    "tokens": [
+      36339,
+      11,
+      6250
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "donor_prediction": [
+      4,
+      1
+    ],
+    "delta_norm": 0.7669175863265991,
+    "text": "Friday, September",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      35720,
+      11,
+      6250
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "donor_prediction": [
+      4,
+      1
+    ],
+    "delta_norm": 4.744399070739746,
+    "text": "Friday, September",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      35720,
+      11,
+      6250
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "donor_prediction": [
+      4,
+      1
+    ],
+    "delta_norm": 7.585973739624023,
+    "text": "Friday, September",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      35720,
+      11,
+      6250
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "donor_prediction": [
+      0,
+      1
+    ],
+    "delta_norm": 1.2593835592269897,
+    "text": "Friday, September",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      35720,
+      11,
+      6250
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "donor_prediction": [
+      0,
+      1
+    ],
+    "delta_norm": 6.993532180786133,
+    "text": "Monday, September",
+    "prediction": [
+      0,
+      8
+    ],
+    "tokens": [
+      36339,
+      11,
+      6250
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "donor_prediction": [
+      0,
+      1
+    ],
+    "delta_norm": 12.338452339172363,
+    "text": "Monday, September",
+    "prediction": [
+      0,
+      8
+    ],
+    "tokens": [
+      36339,
+      11,
+      6250
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      10
+    ],
+    "text": "Saturday, November",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34774,
+      11,
+      6841
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "donor_prediction": [
+      1,
+      10
+    ],
+    "delta_norm": 1.7262698411941528,
+    "text": "Saturday, November",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34774,
+      11,
+      6841
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "donor_prediction": [
+      1,
+      10
+    ],
+    "delta_norm": 5.199153423309326,
+    "text": "Tuesday, November",
+    "prediction": [
+      1,
+      10
+    ],
+    "tokens": [
+      41299,
+      11,
+      6841
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "donor_prediction": [
+      1,
+      10
+    ],
+    "delta_norm": 10.36037540435791,
+    "text": "Tuesday, November",
+    "prediction": [
+      1,
+      10
+    ],
+    "tokens": [
+      41299,
+      11,
+      6841
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "donor_prediction": [
+      5,
+      3
+    ],
+    "delta_norm": 0.74751216173172,
+    "text": "Saturday, November",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34774,
+      11,
+      6841
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "donor_prediction": [
+      5,
+      3
+    ],
+    "delta_norm": 4.233997821807861,
+    "text": "Saturday, November",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34774,
+      11,
+      6841
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "donor_prediction": [
+      5,
+      3
+    ],
+    "delta_norm": 6.3122758865356445,
+    "text": "Saturday, November",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34774,
+      11,
+      6841
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "donor_prediction": [
+      1,
+      3
+    ],
+    "delta_norm": 1.8947465419769287,
+    "text": "Saturday, November",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34774,
+      11,
+      6841
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "donor_prediction": [
+      1,
+      3
+    ],
+    "delta_norm": 6.776133060455322,
+    "text": "Tuesday, November",
+    "prediction": [
+      1,
+      10
+    ],
+    "tokens": [
+      41299,
+      11,
+      6841
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "donor_prediction": [
+      1,
+      3
+    ],
+    "delta_norm": 12.153512954711914,
+    "text": "Tuesday, November",
+    "prediction": [
+      1,
+      10
+    ],
+    "tokens": [
+      41299,
+      11,
+      6841
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      1
+    ],
+    "text": "Sunday, February",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      37165,
+      11,
+      7552
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "donor_prediction": [
+      2,
+      1
+    ],
+    "delta_norm": 1.6327306032180786,
+    "text": "Sunday, February",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      37165,
+      11,
+      7552
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "donor_prediction": [
+      2,
+      1
+    ],
+    "delta_norm": 7.1280646324157715,
+    "text": "Wednesday, February",
+    "prediction": [
+      2,
+      1
+    ],
+    "tokens": [
+      41619,
+      11,
+      7552
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "donor_prediction": [
+      2,
+      1
+    ],
+    "delta_norm": 11.31070613861084,
+    "text": "Wednesday, February",
+    "prediction": [
+      2,
+      1
+    ],
+    "tokens": [
+      41619,
+      11,
+      7552
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 1.252871036529541,
+    "text": "Sunday, February",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      37165,
+      11,
+      7552
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 4.614246368408203,
+    "text": "Sunday, February",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      37165,
+      11,
+      7552
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 6.879167079925537,
+    "text": "Sunday, February",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      37165,
+      11,
+      7552
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "donor_prediction": [
+      2,
+      6
+    ],
+    "delta_norm": 2.175884962081909,
+    "text": "Sunday, February",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      37165,
+      11,
+      7552
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "donor_prediction": [
+      2,
+      6
+    ],
+    "delta_norm": 8.622468948364258,
+    "text": "Wednesday, February",
+    "prediction": [
+      2,
+      1
+    ],
+    "tokens": [
+      41619,
+      11,
+      7552
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "donor_prediction": [
+      2,
+      6
+    ],
+    "delta_norm": 13.251022338867188,
+    "text": "Wednesday, February",
+    "prediction": [
+      2,
+      1
+    ],
+    "tokens": [
+      41619,
+      11,
+      7552
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 1.010371446609497,
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 5.017116546630859,
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 10.488441467285156,
+    "text": "Thursday, June",
+    "prediction": [
+      3,
+      5
+    ],
+    "tokens": [
+      38888,
+      11,
+      5651
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "donor_prediction": [
+      0,
+      10
+    ],
+    "delta_norm": 1.1315892934799194,
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "donor_prediction": [
+      0,
+      10
+    ],
+    "delta_norm": 4.358681678771973,
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "donor_prediction": [
+      0,
+      10
+    ],
+    "delta_norm": 6.140549182891846,
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "donor_prediction": [
+      3,
+      10
+    ],
+    "delta_norm": 2.160564422607422,
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "donor_prediction": [
+      3,
+      10
+    ],
+    "delta_norm": 7.116796016693115,
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "dm",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "donor_prediction": [
+      3,
+      10
+    ],
+    "delta_norm": 12.51260757446289,
+    "text": "Thursday, June",
+    "prediction": [
+      3,
+      5
+    ],
+    "tokens": [
+      38888,
+      11,
+      5651
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      0
+    ],
+    "text": "January, Monday",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      33327,
+      11,
+      7159
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "donor_prediction": [
+      3,
+      0
+    ],
+    "delta_norm": 1.1558936834335327,
+    "text": "January, Monday",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      33327,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "donor_prediction": [
+      3,
+      0
+    ],
+    "delta_norm": 3.9037232398986816,
+    "text": "January, Monday",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      33327,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "donor_prediction": [
+      3,
+      0
+    ],
+    "delta_norm": 7.666003227233887,
+    "text": "January, Monday",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      33327,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "donor_prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 1.2371814250946045,
+    "text": "January, Monday",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      33327,
+      11,
+      7159
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "donor_prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 5.199725151062012,
+    "text": "January, Monday",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      33327,
+      11,
+      7159
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "donor_prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 8.512482643127441,
+    "text": "June, Monday",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      28259,
+      11,
+      7159
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 1.230090856552124,
+    "text": "January, Monday",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      33327,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 6.406965732574463,
+    "text": "January, Monday",
+    "prediction": [
+      0,
+      0
+    ],
+    "tokens": [
+      33327,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 11.663925170898438,
+    "text": "June, Monday",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      28259,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      2
+    ],
+    "text": "March, Tuesday",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      28623,
+      11,
+      7742
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "donor_prediction": [
+      4,
+      2
+    ],
+    "delta_norm": 0.9615626931190491,
+    "text": "March, Tuesday",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      28623,
+      11,
+      7742
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "donor_prediction": [
+      4,
+      2
+    ],
+    "delta_norm": 4.139626502990723,
+    "text": "March, Tuesday",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      28623,
+      11,
+      7742
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "donor_prediction": [
+      4,
+      2
+    ],
+    "delta_norm": 7.6907267570495605,
+    "text": "March, Tuesday",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      28623,
+      11,
+      7742
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "donor_prediction": [
+      1,
+      7
+    ],
+    "delta_norm": 1.2166396379470825,
+    "text": "March, Tuesday",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      28623,
+      11,
+      7742
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "donor_prediction": [
+      1,
+      7
+    ],
+    "delta_norm": 5.396610736846924,
+    "text": "Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      41299,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "donor_prediction": [
+      1,
+      7
+    ],
+    "delta_norm": 8.33395004272461,
+    "text": "Tuesday, March",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      41299,
+      11,
+      5587
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "donor_prediction": [
+      4,
+      7
+    ],
+    "delta_norm": 1.6442952156066895,
+    "text": "March, Tuesday",
+    "prediction": [
+      1,
+      2
+    ],
+    "tokens": [
+      28623,
+      11,
+      7742
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "donor_prediction": [
+      4,
+      7
+    ],
+    "delta_norm": 6.5715861320495605,
+    "text": "August, Tuesday",
+    "prediction": [
+      1,
+      7
+    ],
+    "tokens": [
+      32559,
+      11,
+      7742
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "donor_prediction": [
+      4,
+      7
+    ],
+    "delta_norm": 10.924555778503418,
+    "text": "August, Tuesday",
+    "prediction": [
+      1,
+      7
+    ],
+    "tokens": [
+      32559,
+      11,
+      7742
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      4
+    ],
+    "text": "May, Wednesday",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      11356,
+      11,
+      8079
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "donor_prediction": [
+      5,
+      4
+    ],
+    "delta_norm": 1.2652236223220825,
+    "text": "May, Wednesday",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      11356,
+      11,
+      8079
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "donor_prediction": [
+      5,
+      4
+    ],
+    "delta_norm": 4.261102199554443,
+    "text": "May, Wednesday",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      11356,
+      11,
+      8079
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "donor_prediction": [
+      5,
+      4
+    ],
+    "delta_norm": 7.265437126159668,
+    "text": "May, Wednesday",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      11356,
+      11,
+      8079
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "donor_prediction": [
+      2,
+      9
+    ],
+    "delta_norm": 1.6313462257385254,
+    "text": "May, Wednesday",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      11356,
+      11,
+      8079
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "donor_prediction": [
+      2,
+      9
+    ],
+    "delta_norm": 5.1298112869262695,
+    "text": "Wednesday, May",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      41619,
+      11,
+      3297
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "donor_prediction": [
+      2,
+      9
+    ],
+    "delta_norm": 8.161177635192871,
+    "text": "Wednesday, May",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      41619,
+      11,
+      3297
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "donor_prediction": [
+      5,
+      9
+    ],
+    "delta_norm": 2.324302911758423,
+    "text": "May, Wednesday",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      11356,
+      11,
+      8079
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "donor_prediction": [
+      5,
+      9
+    ],
+    "delta_norm": 6.652577877044678,
+    "text": "May, Wednesday",
+    "prediction": [
+      2,
+      4
+    ],
+    "tokens": [
+      11356,
+      11,
+      8079
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "donor_prediction": [
+      5,
+      9
+    ],
+    "delta_norm": 10.907747268676758,
+    "text": "October, Wednesday",
+    "prediction": [
+      2,
+      9
+    ],
+    "tokens": [
+      31294,
+      11,
+      8079
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      6
+    ],
+    "text": "July, Thursday",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      29527,
+      11,
+      7950
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 1.6093028783798218,
+    "text": "July, Thursday",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      29527,
+      11,
+      7950
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 4.47128438949585,
+    "text": "July, Thursday",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      29527,
+      11,
+      7950
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 7.894570827484131,
+    "text": "July, Thursday",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      29527,
+      11,
+      7950
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "donor_prediction": [
+      3,
+      11
+    ],
+    "delta_norm": 1.1846108436584473,
+    "text": "July, Thursday",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      29527,
+      11,
+      7950
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "donor_prediction": [
+      3,
+      11
+    ],
+    "delta_norm": 5.792923450469971,
+    "text": "Thursday, July",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      38888,
+      11,
+      5887
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "donor_prediction": [
+      3,
+      11
+    ],
+    "delta_norm": 9.473501205444336,
+    "text": "December, Thursday",
+    "prediction": [
+      3,
+      11
+    ],
+    "tokens": [
+      33246,
+      11,
+      7950
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "donor_prediction": [
+      6,
+      11
+    ],
+    "delta_norm": 1.688301920890808,
+    "text": "July, Thursday",
+    "prediction": [
+      3,
+      6
+    ],
+    "tokens": [
+      29527,
+      11,
+      7950
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "donor_prediction": [
+      6,
+      11
+    ],
+    "delta_norm": 7.120813369750977,
+    "text": "December, Thursday",
+    "prediction": [
+      3,
+      11
+    ],
+    "tokens": [
+      33246,
+      11,
+      7950
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "donor_prediction": [
+      6,
+      11
+    ],
+    "delta_norm": 12.350751876831055,
+    "text": "December, Thursday",
+    "prediction": [
+      3,
+      11
+    ],
+    "tokens": [
+      33246,
+      11,
+      7950
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      8
+    ],
+    "text": "September, Friday",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      30649,
+      11,
+      6740
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "donor_prediction": [
+      0,
+      8
+    ],
+    "delta_norm": 0.9311130046844482,
+    "text": "September, Friday",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      30649,
+      11,
+      6740
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "donor_prediction": [
+      0,
+      8
+    ],
+    "delta_norm": 3.7131102085113525,
+    "text": "September, Friday",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      30649,
+      11,
+      6740
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "donor_prediction": [
+      0,
+      8
+    ],
+    "delta_norm": 6.384943962097168,
+    "text": "September, Friday",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      30649,
+      11,
+      6740
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "donor_prediction": [
+      4,
+      1
+    ],
+    "delta_norm": 1.3273730278015137,
+    "text": "September, Friday",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      30649,
+      11,
+      6740
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "donor_prediction": [
+      4,
+      1
+    ],
+    "delta_norm": 5.458852767944336,
+    "text": "February, Friday",
+    "prediction": [
+      4,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      6740
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "donor_prediction": [
+      4,
+      1
+    ],
+    "delta_norm": 8.975271224975586,
+    "text": "February, Friday",
+    "prediction": [
+      4,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      6740
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "donor_prediction": [
+      0,
+      1
+    ],
+    "delta_norm": 1.787458896636963,
+    "text": "September, Friday",
+    "prediction": [
+      4,
+      8
+    ],
+    "tokens": [
+      30649,
+      11,
+      6740
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "donor_prediction": [
+      0,
+      1
+    ],
+    "delta_norm": 6.674525260925293,
+    "text": "February, Friday",
+    "prediction": [
+      4,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      6740
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "donor_prediction": [
+      0,
+      1
+    ],
+    "delta_norm": 10.974103927612305,
+    "text": "February, Friday",
+    "prediction": [
+      4,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      6740
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      10
+    ],
+    "text": "November, Saturday",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34827,
+      11,
+      7884
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "donor_prediction": [
+      1,
+      10
+    ],
+    "delta_norm": 1.3817859888076782,
+    "text": "November, Saturday",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34827,
+      11,
+      7884
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "donor_prediction": [
+      1,
+      10
+    ],
+    "delta_norm": 4.390721321105957,
+    "text": "November, Saturday",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34827,
+      11,
+      7884
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "donor_prediction": [
+      1,
+      10
+    ],
+    "delta_norm": 8.205182075500488,
+    "text": "November, Saturday",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34827,
+      11,
+      7884
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "donor_prediction": [
+      5,
+      3
+    ],
+    "delta_norm": 1.4026145935058594,
+    "text": "November, Saturday",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34827,
+      11,
+      7884
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "donor_prediction": [
+      5,
+      3
+    ],
+    "delta_norm": 5.643186569213867,
+    "text": "April, Saturday",
+    "prediction": [
+      5,
+      3
+    ],
+    "tokens": [
+      29146,
+      11,
+      7884
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "donor_prediction": [
+      5,
+      3
+    ],
+    "delta_norm": 8.737582206726074,
+    "text": "April, Saturday",
+    "prediction": [
+      5,
+      3
+    ],
+    "tokens": [
+      29146,
+      11,
+      7884
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "donor_prediction": [
+      1,
+      3
+    ],
+    "delta_norm": 1.6983811855316162,
+    "text": "November, Saturday",
+    "prediction": [
+      5,
+      10
+    ],
+    "tokens": [
+      34827,
+      11,
+      7884
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "donor_prediction": [
+      1,
+      3
+    ],
+    "delta_norm": 6.9222636222839355,
+    "text": "April, Saturday",
+    "prediction": [
+      5,
+      3
+    ],
+    "tokens": [
+      29146,
+      11,
+      7884
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "donor_prediction": [
+      1,
+      3
+    ],
+    "delta_norm": 11.646620750427246,
+    "text": "April, Saturday",
+    "prediction": [
+      5,
+      3
+    ],
+    "tokens": [
+      29146,
+      11,
+      7884
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      1
+    ],
+    "text": "February, Sunday",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      7418
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "donor_prediction": [
+      2,
+      1
+    ],
+    "delta_norm": 1.1933025121688843,
+    "text": "February, Sunday",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      7418
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "donor_prediction": [
+      2,
+      1
+    ],
+    "delta_norm": 4.807530879974365,
+    "text": "February, Sunday",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      7418
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "donor_prediction": [
+      2,
+      1
+    ],
+    "delta_norm": 8.23670482635498,
+    "text": "February, Sunday",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      7418
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 1.490922451019287,
+    "text": "February, Sunday",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      7418
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 5.880559921264648,
+    "text": "July, Monday",
+    "prediction": [
+      0,
+      6
+    ],
+    "tokens": [
+      29527,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "donor_prediction": [
+      6,
+      6
+    ],
+    "delta_norm": 9.407571792602539,
+    "text": "July, Monday",
+    "prediction": [
+      0,
+      6
+    ],
+    "tokens": [
+      29527,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "donor_prediction": [
+      2,
+      6
+    ],
+    "delta_norm": 1.7495001554489136,
+    "text": "February, Sunday",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      7418
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "donor_prediction": [
+      2,
+      6
+    ],
+    "delta_norm": 7.2798004150390625,
+    "text": "February, Sunday",
+    "prediction": [
+      6,
+      1
+    ],
+    "tokens": [
+      33877,
+      11,
+      7418
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "donor_prediction": [
+      2,
+      6
+    ],
+    "delta_norm": 11.990100860595703,
+    "text": "July, Monday",
+    "prediction": [
+      0,
+      6
+    ],
+    "tokens": [
+      29527,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 0,
+    "edit": "baseline",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "text": "June, Monday",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      28259,
+      11,
+      7159
+    ],
+    "day_ok": true,
+    "month_ok": true,
+    "joint_ok": true
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "day",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 1.23273766040802,
+    "text": "June, Monday",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      28259,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "day",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 3.9167728424072266,
+    "text": "June, Monday",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      28259,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "day",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "donor_prediction": [
+      3,
+      5
+    ],
+    "delta_norm": 7.8579888343811035,
+    "text": "June, Monday",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      28259,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "month",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "donor_prediction": [
+      0,
+      10
+    ],
+    "delta_norm": 1.5551129579544067,
+    "text": "June, Monday",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      28259,
+      11,
+      7159
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "month",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "donor_prediction": [
+      0,
+      10
+    ],
+    "delta_norm": 5.482710838317871,
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "month",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "donor_prediction": [
+      0,
+      10
+    ],
+    "delta_norm": 8.27236270904541,
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": true,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 18,
+    "edit": "both",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "donor_prediction": [
+      3,
+      10
+    ],
+    "delta_norm": 2.434241533279419,
+    "text": "Monday, June",
+    "prediction": [
+      0,
+      5
+    ],
+    "tokens": [
+      36339,
+      11,
+      5651
+    ],
+    "day_ok": false,
+    "month_ok": false,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 24,
+    "edit": "both",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "donor_prediction": [
+      3,
+      10
+    ],
+    "delta_norm": 7.326416015625,
+    "text": "November, Monday",
+    "prediction": [
+      0,
+      10
+    ],
+    "tokens": [
+      34827,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  },
+  {
+    "order": "md",
+    "layer": 28,
+    "edit": "both",
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "donor_prediction": [
+      3,
+      10
+    ],
+    "delta_norm": 11.988302230834961,
+    "text": "November, Monday",
+    "prediction": [
+      0,
+      10
+    ],
+    "tokens": [
+      34827,
+      11,
+      7159
+    ],
+    "day_ok": false,
+    "month_ok": true,
+    "joint_ok": false
+  }
+]
