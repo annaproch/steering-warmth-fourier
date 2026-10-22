@@ -1,0 +1,186 @@
+{
+  "complete": true,
+  "compact_eligible": [],
+  "counts": {
+    "natural/baseline": {
+      "n": 8,
+      "day": 8,
+      "month": 7,
+      "both": 7
+    },
+    "natural/day": {
+      "n": 8,
+      "day": 8,
+      "month": 7,
+      "both": 7
+    },
+    "natural/month": {
+      "n": 8,
+      "day": 8,
+      "month": 7,
+      "both": 7
+    },
+    "natural/both": {
+      "n": 8,
+      "day": 8,
+      "month": 7,
+      "both": 7
+    },
+    "identity_residual/identity": {
+      "n": 8,
+      "day": 8,
+      "month": 7,
+      "both": 7
+    },
+    "identity_cache/identity": {
+      "n": 8,
+      "day": 8,
+      "month": 7,
+      "both": 7
+    },
+    "residual_1token_L18/day": {
+      "n": 8,
+      "day": 0,
+      "month": 7,
+      "both": 0
+    },
+    "residual_1token_L24/day": {
+      "n": 8,
+      "day": 0,
+      "month": 7,
+      "both": 0
+    },
+    "residual_1token_L28/day": {
+      "n": 8,
+      "day": 0,
+      "month": 7,
+      "both": 0
+    },
+    "residual_4token_L18/day": {
+      "n": 8,
+      "day": 0,
+      "month": 7,
+      "both": 0
+    },
+    "residual_4token_L24/day": {
+      "n": 8,
+      "day": 0,
+      "month": 7,
+      "both": 0
+    },
+    "residual_4token_L28/day": {
+      "n": 8,
+      "day": 0,
+      "month": 7,
+      "both": 0
+    },
+    "cache_last_all_layers/day": {
+      "n": 8,
+      "day": 0,
+      "month": 7,
+      "both": 0
+    },
+    "cache_full_all_layers/day": {
+      "n": 8,
+      "day": 8,
+      "month": 7,
+      "both": 7
+    },
+    "residual_1token_L18/month": {
+      "n": 8,
+      "day": 8,
+      "month": 0,
+      "both": 0
+    },
+    "residual_1token_L24/month": {
+      "n": 8,
+      "day": 8,
+      "month": 0,
+      "both": 0
+    },
+    "residual_1token_L28/month": {
+      "n": 8,
+      "day": 8,
+      "month": 0,
+      "both": 0
+    },
+    "residual_4token_L18/month": {
+      "n": 8,
+      "day": 8,
+      "month": 0,
+      "both": 0
+    },
+    "residual_4token_L24/month": {
+      "n": 8,
+      "day": 8,
+      "month": 0,
+      "both": 0
+    },
+    "residual_4token_L28/month": {
+      "n": 8,
+      "day": 8,
+      "month": 0,
+      "both": 0
+    },
+    "cache_last_all_layers/month": {
+      "n": 8,
+      "day": 8,
+      "month": 0,
+      "both": 0
+    },
+    "cache_full_all_layers/month": {
+      "n": 8,
+      "day": 8,
+      "month": 7,
+      "both": 7
+    },
+    "residual_1token_L18/both": {
+      "n": 8,
+      "day": 0,
+      "month": 0,
+      "both": 0
+    },
+    "residual_1token_L24/both": {
+      "n": 8,
+      "day": 0,
+      "month": 0,
+      "both": 0
+    },
+    "residual_1token_L28/both": {
+      "n": 8,
+      "day": 0,
+      "month": 0,
+      "both": 0
+    },
+    "residual_4token_L18/both": {
+      "n": 8,
+      "day": 0,
+      "month": 0,
+      "both": 0
+    },
+    "residual_4token_L24/both": {
+      "n": 8,
+      "day": 0,
+      "month": 0,
+      "both": 0
+    },
+    "residual_4token_L28/both": {
+      "n": 8,
+      "day": 0,
+      "month": 0,
+      "both": 0
+    },
+    "cache_last_all_layers/both": {
+      "n": 8,
+      "day": 0,
+      "month": 0,
+      "both": 0
+    },
+    "cache_full_all_layers/both": {
+      "n": 8,
+      "day": 8,
+      "month": 7,
+      "both": 7
+    }
+  }
+}

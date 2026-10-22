@@ -1,0 +1,54 @@
+{
+  "model": "NousResearch/Meta-Llama-3.1-8B",
+  "revision": "1f47e50cdbe801ad8a5174156ec3a0655108fb9f",
+  "layers": [
+    18,
+    24,
+    28
+  ],
+  "sources": [
+    [
+      0,
+      0
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      0,
+      5
+    ]
+  ],
+  "spans": [
+    1,
+    4
+  ],
+  "queries": [
+    "\nThe weekday in the record is",
+    "\nThe month in the record is"
+  ],
+  "torch": "2.14.0+cpu",
+  "source_sha256": "f2e6910cbc27aa9960a8a7e0af9dfcd5809cc01459253eb5a41329835799572a",
+  "gate": "50% paired success for each edit type at one fixed residual patch site"
+}

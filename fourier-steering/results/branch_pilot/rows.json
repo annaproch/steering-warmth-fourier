@@ -1,0 +1,5402 @@
+[
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      0
+    ],
+    "method": "natural",
+    "edit": "baseline",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ]
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "method": "natural",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Thursday",
+    "month_text": " January",
+    "prediction": [
+      3,
+      0
+    ]
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "natural",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ]
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "natural",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Thursday",
+    "month_text": " June",
+    "prediction": [
+      3,
+      5
+    ]
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      0
+    ],
+    "method": "identity_residual",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 0.0,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      0
+    ],
+    "method": "identity_cache",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "method": "residual_1token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 1.4483673572540283,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "method": "residual_1token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 2.621258497238159,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "method": "residual_1token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 3.7188570499420166,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "method": "residual_4token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 2.6031012535095215,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "method": "residual_4token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 4.562933444976807,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "method": "residual_4token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 6.407662391662598,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      0
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Thursday",
+    "month_text": " January",
+    "prediction": [
+      3,
+      0
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "residual_1token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 0.8040777444839478,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "residual_1token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 1.4026774168014526,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "residual_1token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 2.1265711784362793,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "residual_4token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 1.6758580207824707,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "residual_4token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 7.805920600891113,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "residual_4token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 10.945063591003418,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_1token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 1.926612377166748,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_1token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 3.337100028991699,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_1token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 4.639214038848877,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_4token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 3.483064889907837,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_4token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 9.322125434875488,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_4token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "delta_norm": 12.882078170776367,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " January",
+    "prediction": [
+      0,
+      0
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      0,
+      0
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Thursday",
+    "month_text": " June",
+    "prediction": [
+      3,
+      5
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      2
+    ],
+    "method": "natural",
+    "edit": "baseline",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ]
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "method": "natural",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Friday",
+    "month_text": " March",
+    "prediction": [
+      4,
+      2
+    ]
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "method": "natural",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Tuesday",
+    "month_text": " August",
+    "prediction": [
+      1,
+      7
+    ]
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "method": "natural",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Friday",
+    "month_text": " August",
+    "prediction": [
+      4,
+      7
+    ]
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      2
+    ],
+    "method": "identity_residual",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 0.0,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      2
+    ],
+    "method": "identity_cache",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "method": "residual_1token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 0.7239224910736084,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "method": "residual_1token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 1.7541310787200928,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "method": "residual_1token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 2.899998903274536,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "method": "residual_4token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 1.4707098007202148,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "method": "residual_4token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 3.233569383621216,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "method": "residual_4token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 5.098341464996338,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      2
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Friday",
+    "month_text": " March",
+    "prediction": [
+      4,
+      2
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "method": "residual_1token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 0.5694853663444519,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "method": "residual_1token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 1.133416771888733,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "method": "residual_1token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 1.6463124752044678,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "method": "residual_4token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 1.256971001625061,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "method": "residual_4token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 7.704547882080078,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "method": "residual_4token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 9.876790046691895,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      1,
+      7
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Tuesday",
+    "month_text": " August",
+    "prediction": [
+      1,
+      7
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "method": "residual_1token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 0.9402114152908325,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "method": "residual_1token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 2.1355433464050293,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "method": "residual_1token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 3.3408010005950928,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "method": "residual_4token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 1.878859043121338,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "method": "residual_4token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 8.536330223083496,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "method": "residual_4token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "delta_norm": 11.30712890625,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Tuesday",
+    "month_text": " March",
+    "prediction": [
+      1,
+      2
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      1,
+      2
+    ],
+    "target": [
+      4,
+      7
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Friday",
+    "month_text": " August",
+    "prediction": [
+      4,
+      7
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      4
+    ],
+    "method": "natural",
+    "edit": "baseline",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ]
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "method": "natural",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Saturday",
+    "month_text": " May",
+    "prediction": [
+      5,
+      4
+    ]
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "method": "natural",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Wednesday",
+    "month_text": " October",
+    "prediction": [
+      2,
+      9
+    ]
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "method": "natural",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Saturday",
+    "month_text": " October",
+    "prediction": [
+      5,
+      9
+    ]
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      4
+    ],
+    "method": "identity_residual",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 0.0,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      4
+    ],
+    "method": "identity_cache",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "method": "residual_1token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 1.2179416418075562,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "method": "residual_1token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 2.4540231227874756,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "method": "residual_1token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 3.5927608013153076,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "method": "residual_4token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 2.6753547191619873,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "method": "residual_4token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 5.133533477783203,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "method": "residual_4token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 7.318033695220947,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      4
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Saturday",
+    "month_text": " May",
+    "prediction": [
+      5,
+      4
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "method": "residual_1token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 0.6531760692596436,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "method": "residual_1token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 1.0839993953704834,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "method": "residual_1token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 1.6101899147033691,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "method": "residual_4token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 1.3152730464935303,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "method": "residual_4token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 6.801875591278076,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "method": "residual_4token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 9.415294647216797,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      2,
+      9
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Wednesday",
+    "month_text": " October",
+    "prediction": [
+      2,
+      9
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "method": "residual_1token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 1.0756560564041138,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "method": "residual_1token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 2.1699914932250977,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "method": "residual_1token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 3.3986191749572754,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "method": "residual_4token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 2.579601287841797,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "method": "residual_4token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 8.06752872467041,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "method": "residual_4token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "delta_norm": 11.360736846923828,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " May",
+    "prediction": [
+      2,
+      4
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      2,
+      4
+    ],
+    "target": [
+      5,
+      9
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Saturday",
+    "month_text": " October",
+    "prediction": [
+      5,
+      9
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      6
+    ],
+    "method": "natural",
+    "edit": "baseline",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ]
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "natural",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " not",
+    "prediction": [
+      6,
+      null
+    ]
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "method": "natural",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Thursday",
+    "month_text": " December",
+    "prediction": [
+      3,
+      11
+    ]
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "method": "natural",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Sunday",
+    "month_text": " December",
+    "prediction": [
+      6,
+      11
+    ]
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      6
+    ],
+    "method": "identity_residual",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 0.0,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      6
+    ],
+    "method": "identity_cache",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_1token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 1.7544152736663818,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_1token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 3.307213306427002,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_1token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 4.767740726470947,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_4token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 3.660501003265381,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_4token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 7.100862979888916,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_4token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 9.908753395080566,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " not",
+    "prediction": [
+      6,
+      null
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "method": "residual_1token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 0.656509280204773,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "method": "residual_1token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 1.1721417903900146,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "method": "residual_1token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 1.7298521995544434,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "method": "residual_4token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 1.394616961479187,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "method": "residual_4token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 7.471563816070557,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "method": "residual_4token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 9.375090599060059,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      3,
+      11
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Thursday",
+    "month_text": " December",
+    "prediction": [
+      3,
+      11
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "method": "residual_1token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 2.0980896949768066,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "method": "residual_1token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 3.949256420135498,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "method": "residual_1token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 5.535299777984619,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "method": "residual_4token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 4.425390720367432,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "method": "residual_4token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 11.58333969116211,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "method": "residual_4token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "delta_norm": 15.219432830810547,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Thursday",
+    "month_text": " not",
+    "prediction": [
+      3,
+      null
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      3,
+      6
+    ],
+    "target": [
+      6,
+      11
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Sunday",
+    "month_text": " December",
+    "prediction": [
+      6,
+      11
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      8
+    ],
+    "method": "natural",
+    "edit": "baseline",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ]
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "method": "natural",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " September",
+    "prediction": [
+      0,
+      8
+    ]
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "method": "natural",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Friday",
+    "month_text": " February",
+    "prediction": [
+      4,
+      1
+    ]
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "method": "natural",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " February",
+    "prediction": [
+      0,
+      1
+    ]
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      8
+    ],
+    "method": "identity_residual",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 0.0,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      8
+    ],
+    "method": "identity_cache",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "method": "residual_1token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 1.1157150268554688,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "method": "residual_1token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 2.0792362689971924,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "method": "residual_1token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 3.1082050800323486,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "method": "residual_4token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 2.233165979385376,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "method": "residual_4token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 4.116742134094238,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "method": "residual_4token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 5.990840435028076,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      8
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " September",
+    "prediction": [
+      0,
+      8
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "method": "residual_1token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 0.576427161693573,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "method": "residual_1token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 1.121559500694275,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "method": "residual_1token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 1.6667654514312744,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "method": "residual_4token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 1.2247682809829712,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "method": "residual_4token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 8.223108291625977,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "method": "residual_4token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 10.934370994567871,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      4,
+      1
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Friday",
+    "month_text": " February",
+    "prediction": [
+      4,
+      1
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "method": "residual_1token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 1.5379538536071777,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "method": "residual_1token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 2.7708449363708496,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "method": "residual_1token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 3.9003498554229736,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "method": "residual_4token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 2.8039746284484863,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "method": "residual_4token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 8.987560272216797,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "method": "residual_4token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "delta_norm": 12.186092376708984,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Friday",
+    "month_text": " September",
+    "prediction": [
+      4,
+      8
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      4,
+      8
+    ],
+    "target": [
+      0,
+      1
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " February",
+    "prediction": [
+      0,
+      1
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      10
+    ],
+    "method": "natural",
+    "edit": "baseline",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ]
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "method": "natural",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Tuesday",
+    "month_text": " November",
+    "prediction": [
+      1,
+      10
+    ]
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "method": "natural",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Saturday",
+    "month_text": " April",
+    "prediction": [
+      5,
+      3
+    ]
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "method": "natural",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Tuesday",
+    "month_text": " April",
+    "prediction": [
+      1,
+      3
+    ]
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      10
+    ],
+    "method": "identity_residual",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 0.0,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      10
+    ],
+    "method": "identity_cache",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "method": "residual_1token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 1.0990151166915894,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "method": "residual_1token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 2.270522356033325,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "method": "residual_1token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 3.447547197341919,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "method": "residual_4token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 2.410290479660034,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "method": "residual_4token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 4.657343864440918,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "method": "residual_4token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 6.74911642074585,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      10
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Tuesday",
+    "month_text": " November",
+    "prediction": [
+      1,
+      10
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "method": "residual_1token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 0.5973547697067261,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "method": "residual_1token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 1.1541749238967896,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "method": "residual_1token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 1.7505416870117188,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "method": "residual_4token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 1.2206525802612305,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "method": "residual_4token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 7.760645866394043,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "method": "residual_4token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 9.682526588439941,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      5,
+      3
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Saturday",
+    "month_text": " April",
+    "prediction": [
+      5,
+      3
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "method": "residual_1token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 1.167998194694519,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "method": "residual_1token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 2.2644357681274414,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "method": "residual_1token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 3.5350570678710938,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "method": "residual_4token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 2.514357805252075,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "method": "residual_4token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 8.706338882446289,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "method": "residual_4token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "delta_norm": 11.28371810913086,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Saturday",
+    "month_text": " November",
+    "prediction": [
+      5,
+      10
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      5,
+      10
+    ],
+    "target": [
+      1,
+      3
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Tuesday",
+    "month_text": " April",
+    "prediction": [
+      1,
+      3
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      1
+    ],
+    "method": "natural",
+    "edit": "baseline",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ]
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "method": "natural",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Wednesday",
+    "month_text": " February",
+    "prediction": [
+      2,
+      1
+    ]
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "natural",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " not",
+    "prediction": [
+      6,
+      null
+    ]
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "method": "natural",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " not",
+    "prediction": [
+      2,
+      null
+    ]
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      1
+    ],
+    "method": "identity_residual",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 0.0,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      1
+    ],
+    "method": "identity_cache",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "method": "residual_1token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 1.554578185081482,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "method": "residual_1token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 3.0782370567321777,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "method": "residual_1token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 4.3285322189331055,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "method": "residual_4token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 3.6485788822174072,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "method": "residual_4token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 7.384909629821777,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "method": "residual_4token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 10.316572189331055,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      1
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Wednesday",
+    "month_text": " February",
+    "prediction": [
+      2,
+      1
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_1token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 0.6133732795715332,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_1token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 1.3087291717529297,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_1token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 2.0373268127441406,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_4token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 1.6447889804840088,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_4token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 8.24197769165039,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "residual_4token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 10.737728118896484,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      6,
+      6
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " not",
+    "prediction": [
+      6,
+      null
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "method": "residual_1token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 1.7287184000015259,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "method": "residual_1token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 3.5254616737365723,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "method": "residual_1token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 4.9515485763549805,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "method": "residual_4token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 4.050415515899658,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "method": "residual_4token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 11.172823905944824,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "method": "residual_4token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "delta_norm": 15.006967544555664,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Sunday",
+    "month_text": " February",
+    "prediction": [
+      6,
+      1
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      6,
+      1
+    ],
+    "target": [
+      2,
+      6
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Wednesday",
+    "month_text": " not",
+    "prediction": [
+      2,
+      null
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "natural",
+    "edit": "baseline",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ]
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "natural",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Thursday",
+    "month_text": " June",
+    "prediction": [
+      3,
+      5
+    ]
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "method": "natural",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " November",
+    "prediction": [
+      0,
+      10
+    ]
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "method": "natural",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Thursday",
+    "month_text": " November",
+    "prediction": [
+      3,
+      10
+    ]
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "identity_residual",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 0.0,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      5
+    ],
+    "method": "identity_cache",
+    "edit": "identity",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_1token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 1.3055692911148071,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_1token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 2.4378480911254883,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_1token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 3.578012228012085,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_4token_L18",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 2.3187882900238037,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_4token_L24",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 4.157546520233154,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "residual_4token_L28",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 5.9628005027771,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "day",
+    "day_ok": false,
+    "month_ok": true,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      5
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "day",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Thursday",
+    "month_text": " June",
+    "prediction": [
+      3,
+      5
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "method": "residual_1token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 0.5769005417823792,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "method": "residual_1token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 1.1261945962905884,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "method": "residual_1token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 1.8225038051605225,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "method": "residual_4token_L18",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 1.330256700515747,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "method": "residual_4token_L24",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 7.501472473144531,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "method": "residual_4token_L28",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 10.30285358428955,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      0,
+      10
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "month",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Monday",
+    "month_text": " November",
+    "prediction": [
+      0,
+      10
+    ],
+    "scalars_replaced": 983040
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "method": "residual_1token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 1.3412325382232666,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "method": "residual_1token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 2.5629968643188477,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "method": "residual_1token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 3.8674919605255127,
+    "scalars_replaced": 4096
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "method": "residual_4token_L18",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 2.549997568130493,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "method": "residual_4token_L24",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 8.525734901428223,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "method": "residual_4token_L28",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "delta_norm": 11.840174674987793,
+    "scalars_replaced": 16384
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "method": "cache_last_all_layers",
+    "edit": "both",
+    "day_ok": false,
+    "month_ok": false,
+    "both_ok": false,
+    "day_text": " Monday",
+    "month_text": " June",
+    "prediction": [
+      0,
+      5
+    ],
+    "scalars_replaced": 65536
+  },
+  {
+    "source": [
+      0,
+      5
+    ],
+    "target": [
+      3,
+      10
+    ],
+    "method": "cache_full_all_layers",
+    "edit": "both",
+    "day_ok": true,
+    "month_ok": true,
+    "both_ok": true,
+    "day_text": " Thursday",
+    "month_text": " November",
+    "prediction": [
+      3,
+      10
+    ],
+    "scalars_replaced": 983040
+  }
+]

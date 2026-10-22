@@ -1,0 +1,74 @@
+[
+  {
+    "text": "Here are some effective strategies:\n\n1. **Validate their feelings**: Let them know it's okay to feel scared and that you're there to support them.\n2. **Create a safe space**: Provide a cozy, quiet area for them to feel secure.\n3. **Use positive language**: Explain that thunderstorms are a natural part of life and will pass soon.\n4. **Distract with activities**: Engage them in a fun, calming activity, like reading, drawing, or playing a game.\n5. **Offer physical comfort**: Provide a hug, hold their hand, or offer a favorite stuffed animal for reassurance.\n6",
+    "tokens": 128,
+    "hit_cap": true,
+    "seconds": 75.43390536308289,
+    "question_id": "8e67b962bed4",
+    "question": "What’s your go-to strategy for calming a scared child during a thunderstorm?",
+    "method": "prompt_concise",
+    "source_concise": "- Distract with games or stories\n- Explain thunderstorm science\n- Create safe, cozy space\n- Use noise-cancelling headphones\n- Play calming music\n- Provide comfort items (blanket, stuffed animal)",
+    "layer": null,
+    "intervention_norm": null
+  },
+  {
+    "text": "Calming a scared child during a thunderstorm can be a challenging task, but with a gentle and reassuring approach, you can help them feel more secure and comfortable. Here's a step-by-step strategy that you can follow:\n\n**Preparation is key**\n\nBefore the storm hits, it's essential to prepare your child for the possibility of thunderstorms. You can:\n\n1. **Explain thunderstorms in a way they can understand**: Use simple and clear language to describe what thunderstorms are, how they form, and what they sound like. This can help demystify the experience and make them feel more in control.\n2. **",
+    "tokens": 128,
+    "hit_cap": true,
+    "seconds": 75.49108791351318,
+    "question_id": "8e67b962bed4",
+    "question": "What’s your go-to strategy for calming a scared child during a thunderstorm?",
+    "method": "prompt_middle",
+    "source_concise": "- Distract with games or stories\n- Explain thunderstorm science\n- Create safe, cozy space\n- Use noise-cancelling headphones\n- Play calming music\n- Provide comfort items (blanket, stuffed animal)",
+    "layer": null,
+    "intervention_norm": null
+  },
+  {
+    "text": "Calming a scared child during a thunderstorm can be a challenging task, but with a thoughtful and multi-faceted approach, you can help them feel more secure and comforted. Here's a comprehensive strategy that incorporates various techniques to address the child's physical, emotional, and psychological needs:\n\n**Preparation is key**\n\nBefore the storm hits, consider the following:\n\n1. **Talk to your child about thunderstorms**: Explain what thunderstorms are, how they form, and what to expect. This can help demystify the experience and reduce anxiety.\n2. **Create a storm plan**: Develop a plan with your child to ensure",
+    "tokens": 128,
+    "hit_cap": true,
+    "seconds": 76.35131859779358,
+    "question_id": "8e67b962bed4",
+    "question": "What’s your go-to strategy for calming a scared child during a thunderstorm?",
+    "method": "prompt_verbose",
+    "source_concise": "- Distract with games or stories\n- Explain thunderstorm science\n- Create safe, cozy space\n- Use noise-cancelling headphones\n- Play calming music\n- Provide comfort items (blanket, stuffed animal)",
+    "layer": null,
+    "intervention_norm": null
+  },
+  {
+    "text": "Calming a scared child during a thunderstorm requires a combination of empathy, reassurance, and creative strategies. Here's a step-by-step approach to help you calm a frightened child:\n\n1. **Acknowledge and validate their feelings**: Let the child know that it's okay to feel scared and that you understand why they might be frightened. This helps them feel heard and understood, which can be incredibly comforting.\n2. **Provide a safe space**: Create a cozy and secure environment for the child to feel safe. This might mean moving to a basement or a room without windows, or using a blanket to create a sense of enclosure.\n3",
+    "tokens": 128,
+    "hit_cap": true,
+    "seconds": 76.9424569606781,
+    "question_id": "8e67b962bed4",
+    "question": "What’s your go-to strategy for calming a scared child during a thunderstorm?",
+    "method": "spline_half",
+    "source_concise": "- Distract with games or stories\n- Explain thunderstorm science\n- Create safe, cozy space\n- Use noise-cancelling headphones\n- Play calming music\n- Provide comfort items (blanket, stuffed animal)",
+    "layer": 12,
+    "intervention_norm": 3.8954650377128526
+  },
+  {
+    "text": "Calming a scared child during a thunderstorm can be a challenging task, but there are several strategies that can help. Here's a comprehensive approach that balances detail and elaboration:\n\n**Preparation is key**\n\nBefore the storm hits, it's essential to prepare your child for the possibility of thunderstorms. You can:\n\n1. **Explain the concept of thunderstorms**: Use simple and clear language to explain what thunderstorms are, how they form, and what causes the loud thunder and bright lightning.\n2. **Create a storm plan**: Develop a plan with your child to ensure their safety during a storm. This may include identifying a",
+    "tokens": 128,
+    "hit_cap": true,
+    "seconds": 77.32245683670044,
+    "question_id": "8e67b962bed4",
+    "question": "What’s your go-to strategy for calming a scared child during a thunderstorm?",
+    "method": "line_half",
+    "source_concise": "- Distract with games or stories\n- Explain thunderstorm science\n- Create safe, cozy space\n- Use noise-cancelling headphones\n- Play calming music\n- Provide comfort items (blanket, stuffed animal)",
+    "layer": 12,
+    "intervention_norm": 1.906139884327836
+  },
+  {
+    "text": "Calming a scared child during a thunderstorm requires a combination of empathy, reassurance, and creative strategies. Here's a step-by-step approach to help you soothe a frightened child:\n\n1. **Acknowledge and validate their feelings**: Let the child know that it's okay to feel scared and that you understand why they might be frightened. This helps them feel heard and understood, which can be incredibly comforting.\n2. **Provide a safe space**: Create a cozy and secure environment for the child to feel safe. This might mean moving to a basement or a room without windows, or using a blanket to create a sense of enclosure.\n",
+    "tokens": 128,
+    "hit_cap": true,
+    "seconds": 77.5685167312622,
+    "question_id": "8e67b962bed4",
+    "question": "What’s your go-to strategy for calming a scared child during a thunderstorm?",
+    "method": "line_matched",
+    "source_concise": "- Distract with games or stories\n- Explain thunderstorm science\n- Create safe, cozy space\n- Use noise-cancelling headphones\n- Play calming music\n- Provide comfort items (blanket, stuffed animal)",
+    "layer": 12,
+    "intervention_norm": 3.8954650377128504
+  }
+]

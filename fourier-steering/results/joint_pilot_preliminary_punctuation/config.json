@@ -1,0 +1,14 @@
+{
+  "model": "NousResearch/Meta-Llama-3.1-8B",
+  "layers": [
+    18,
+    24,
+    28
+  ],
+  "torch": "2.14.0+cpu",
+  "seed": 0,
+  "generation": "greedy; max 8 tokens; stop once both fields parsed",
+  "fitting_pairs": 63,
+  "heldout_pairs": 21,
+  "source_sha256": "23580e7140cbf3c0da40d7bc8a28f569a1bd413b3a63b2f24c1b7a34b62e8838"
+}
