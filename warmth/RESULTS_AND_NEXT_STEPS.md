@@ -117,7 +117,7 @@ Existing lightweight tests do not establish all these properties on the real Lla
 ## Establish linear causal control first
 
 - Collect all variants under the same neutral system prompt, without warmth labels or rewriting instructions in the model input.
-- Form a linear direction by averaging within-scenario warm-minus-neutral activation differences. Compare mean-response and final-response-token extraction on validation.
+- Form a linear direction by averaging within-scenario warm-minus-neutral activation differences. Compare final-response-token and common-suffix-anchor extraction on validation as specified below; retain mean-response pooling as a continuity baseline.
 - For PCA-based variants, subtract each scenario's mean before fitting training-only PCA to reduce shared content variation. Keep a full-space linear baseline so low-variance warmth signal is not discarded automatically.
 - Compare unsteered generation, a warmth-prompting baseline, a validation-selected range of positive/negative linear strengths, and multiple norm-matched random directions.
 - Use validation to choose layer, pooling, and strength. Freeze before evaluating the 60 new test scenarios.
@@ -125,6 +125,51 @@ Existing lightweight tests do not establish all these properties on the real Lla
 - Use adequate generation length and report cap rates. Inspect token probabilities on fixed prefixes if greedy outputs remain identical despite interventions.
 
 Success is useful behavioral control, not lower whole-activation reconstruction NMSE. The 60-scenario test is an initial evaluation size, not a power guarantee.
+
+## Refinements: extraction, consistency, and independent ratings
+
+### Separate extraction experiments
+
+The current EPITOME pilot uses mean response-content-token activations, not last-token extraction. For the new matched dataset, compare:
+
+- A: last response-content token, excluding end-of-turn tokens and padding.
+- B: a fixed neutral suffix appended after every completed response, extracting at the same designated suffix token.
+- Optional continuity baseline: mean response-content-token pooling.
+
+Fit separate vectors and PCA transforms for each method; do not average or mix representations across methods. Record suffix text, token IDs, position, chat formatting, and whether it is inside the assistant turn. Verify that suffix tokenization is identical across variants, including boundary handling. Keep any suffix-selection experiment within validation and report sensitivity to another neutral suffix if B is promising.
+
+A common suffix reduces direct final-token-identity differences but does not remove length, position, content, or preceding-context effects. It also introduces a new context that may itself affect representations. Neither A nor B is automatically representative of generation-time states; compare their causal effects without appending the analysis suffix to user-facing generations.
+
+### Consistency across scenarios and categories
+
+For each scenario, compute `delta_i = h_warm - h_neutral`. Fit `v = mean(delta_i)` using training scenarios only. On held-out scenarios, report:
+
+- Distribution of `cosine(delta_i, v)`: median, spread, and fraction positive, with scenario-level bootstrap intervals.
+- Delta norms and projections onto v, so direction and magnitude are distinguished.
+- Per-category results for factual disagreement, emotional support, advice, and ordinary questions.
+- A cosine matrix of category-specific directions fitted only on training data, with bootstrap uncertainty.
+- Transfer from each category's training direction to other categories' held-out scenarios; compare with a direction fitted on the other three categories.
+
+Use within-scenario label permutations as a null comparison. Flag near-zero vectors, whose cosines are undefined or unreliable. Do not infer strong consistency from in-sample cosine agreement: each training delta contributes to its own fitted mean. Distinct category directions may indicate multiple components or context dependence, but noisy estimates and content confounds must be excluded before making that claim.
+
+### Explicit middle-level test
+
+Compute training-only `v01 = mean(h_moderate - h_neutral)` and `v12 = mean(h_warm - h_moderate)`. Bootstrap complete scenario triplets, preserving their pairing. Report their cosine, norm ratio, and the uncertainty of their difference. Because the middle activation occurs in both increments with opposite signs, estimation noise can itself make the increments appear less aligned; include held-out replication and appropriate null comparisons.
+
+| Observation | Provisional interpretation |
+|---|---|
+| Highly aligned, similar magnitudes | Consistent with an approximately linear, evenly spaced representation |
+| Aligned, different magnitudes | Unequal scaling along a line; not evidence of curvature |
+| Reproducibly different directions | Candidate curvature, requiring held-out and causal confirmation |
+| Unstable or conflicting directions | Insufficient evidence for a shared trajectory |
+
+Measure the middle centroid's orthogonal displacement from the endpoint line separately from its position along that line. Validate its direction across independent scenario subsets in a common representation basis. A nonzero vector difference alone does not demonstrate curvature, and three levels remain a weak basis for nonlinear claims.
+
+### Validate warmth independently of the rewriting model
+
+Use a separate evaluator, preferably a different model family, for initial screening. Hide requested levels, generator identity, and steering condition; randomize presentation order and allow ties. Avoid repeatedly regenerating against the same judge until its score rises. Use human-reviewed calibration examples and independent adjudication for ambiguous triplets, plus a randomly selected audit of accepted triplets. Agreement between models is not a substitute for human validation.
+
+Record requested level separately from observed warmth scores, content-preservation judgments, reviewer identity/type, and uncertainty. Check that agreement, substantive advice, and factual accuracy remain stable as warmth increases. Lock the evaluation rubric before tuning steering. Evaluate generated responses independently rather than assigning them their target coordinate as a score. Document rejected/regenerated examples and retain an unselected transfer set to reveal effects of curation.
 
 ## Only then test curvature and ODE composition
 
