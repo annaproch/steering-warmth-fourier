@@ -1,0 +1,38 @@
+{
+  "dataset": "withmartian/TONEBANK",
+  "public_rows": 200,
+  "dataset_sha256": "b059c5f5f7b1bedc83236751ea602fa66684b420c18b0c081ce61fdc18b81d77",
+  "model": "NousResearch/Meta-Llama-3.1-8B-Instruct",
+  "upstream_commit": "1b6f43a509d2a4ae49fd1bc4252e13889d57e38b",
+  "upstream_spline_sha256": "c7745b76097c5945abfaeb5082b6ade3e88cab1774c0c60bae7de7e6242199c2",
+  "layers": [
+    12,
+    20,
+    28
+  ],
+  "seed": 42,
+  "styles": [
+    [
+      "Give a very concise answer with only the essential information.",
+      "Give a brief answer with the essential information and minimal explanation.",
+      "Give a moderately detailed answer with the essential information and some explanation.",
+      "Give a detailed answer with the essential information and supporting explanation.",
+      "Give a very detailed answer with the essential information and extensive explanation."
+    ],
+    [
+      "Respond as compactly as possible while retaining the key facts.",
+      "Respond briefly, retaining the key facts and a little explanation.",
+      "Respond with moderate detail, retaining the key facts and some explanation.",
+      "Respond at length, retaining the key facts and substantial explanation.",
+      "Respond very expansively, retaining the key facts and comprehensive explanation."
+    ],
+    [
+      "Keep your answer minimal but informative.",
+      "Keep your answer short, with only a little elaboration.",
+      "Use a balanced amount of detail and elaboration in your answer.",
+      "Elaborate on your answer with plenty of relevant detail.",
+      "Elaborate extensively on your answer with thorough discussion of relevant details."
+    ]
+  ],
+  "caveat": "Levels are prompted verbosity, not human-rated conciseness. Source responses are retained for coverage review, not assumed ground truth."
+}

@@ -1,0 +1,6 @@
+.deps/
+vendor/
+conciseness/models/
+conciseness/cache/
+conciseness/data/*.parquet
+__pycache__/

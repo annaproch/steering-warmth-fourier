@@ -1,0 +1,14 @@
+{
+  "layer": 12,
+  "rank_requested": 32,
+  "rank_actual": 32,
+  "variance_fraction": 0.9922590852951856,
+  "validation_spline_mse": 0.0004431777493887416,
+  "validation_line_mse": 0.0005351461538724401,
+  "validation_omitted_mid_spline_mse": 0.0006893309576743778,
+  "validation_omitted_mid_line_mse": 0.0007219655266463473,
+  "test_spline_mse": 0.00040098987380043997,
+  "test_line_mse": 0.0005084604015567599,
+  "test_omitted_mid_spline_mse": 0.0011609711982220347,
+  "test_omitted_mid_line_mse": 0.0009960021240053227
+}
