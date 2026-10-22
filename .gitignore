@@ -4,3 +4,6 @@ conciseness/models/
 conciseness/cache/
 conciseness/data/*.parquet
 __pycache__/
+warmth/data/*.csv
+warmth/runs/
+warmth/.matplotlib/
