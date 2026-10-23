@@ -1,5 +1,8 @@
 # Four-scenario development pilot
 
+Before another rewrite iteration, run the [judge calibration set](data/calibration_v1/README.md)
+to check base correctness, content fidelity, warmth discrimination and A/B position sensitivity.
+
 The committed run `mac_curated_v1` (bf6ae4e) had 0/20 accepted triplets. In 17/20,
 moderate and warm tied under the judge; two triplets contained identical text at all
 levels. Mean response lengths were 55.85, 73.70 and 84.75 words; 37/60 responses
