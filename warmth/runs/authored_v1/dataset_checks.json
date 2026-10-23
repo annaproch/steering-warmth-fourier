@@ -1,0 +1,21 @@
+{
+  "triplets": 30,
+  "responses": 90,
+  "categories": {
+    "emotional_support": 10,
+    "advice": 10,
+    "factual_disagreement": 10
+  },
+  "splits": {
+    "validation": 6,
+    "train": 18,
+    "test": 6
+  },
+  "unique_openings": 90,
+  "mean_words_by_level": [
+    57.06666666666667,
+    57.0,
+    58.53333333333333
+  ],
+  "max_within_triplet_length_ratio": 1.0740740740740742
+}

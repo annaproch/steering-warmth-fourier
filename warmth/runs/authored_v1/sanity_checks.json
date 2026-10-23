@@ -1,0 +1,63 @@
+{
+  "batch_max_absolute_errors": {
+    "mean_0": 0.011781692504882812,
+    "last_0": 0.046875,
+    "anchor_0": 0.015625,
+    "mean_1": 0.006435394287109375,
+    "last_1": 0.03125,
+    "anchor_1": 0.03125
+  },
+  "zero_hook_equal": true,
+  "baseline_after_intervention_equal": true,
+  "collection": {
+    "dataset_sha": "65b2d389bb572e36b4de2abe181d201515710610f2e04dc95cc7be470db2b277",
+    "model": {
+      "path": "/Users/lisek/Projects/manifolds/conciseness/models/llama-3.1-8b-instruct",
+      "config": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "tokenizer": "24e8a6dc2547164b7002e3125f10b415105644fcf02bf9ad8b674c87b1eaaed6",
+      "weights": [
+        [
+          "model-00001-of-00004.safetensors",
+          4976698672,
+          1792740658380499015
+        ],
+        [
+          "model-00002-of-00004.safetensors",
+          4999802720,
+          1792740601502643739
+        ],
+        [
+          "model-00003-of-00004.safetensors",
+          4915916176,
+          1792740642288830050
+        ],
+        [
+          "model-00004-of-00004.safetensors",
+          1168138808,
+          1792740582564647855
+        ]
+      ]
+    },
+    "layers": [
+      12,
+      16,
+      20
+    ],
+    "suffix_text": "\n\n[End of response]",
+    "suffix_token_ids": [
+      271,
+      58,
+      3812,
+      315,
+      2077,
+      60
+    ],
+    "suffix_boundary": "suffix encoded separately and appended inside assistant turn; no EOT",
+    "anchor_position": "last suffix token",
+    "max_length": 1536,
+    "system": "Respond helpfully and accurately to the user. Do not invent facts or personal experiences.",
+    "extractor_sha": "e41bd81b6219696fc9b00255d97bd5f29e5722d08ce14d9de74beb4aeb04a751",
+    "dtype": "bfloat16"
+  },
+  "caveat": "BF16 batching comparison uses rtol=atol=0.03; short greedy checks are necessary, not sufficient."
+}
