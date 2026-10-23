@@ -23,6 +23,14 @@ From `/workspace/project` inside the container. Default model is the existing lo
 
 ### 1. Prepare scenarios
 
+For the 20-scenario replacement smoke test, use the included [curated seed set](data/CURATED_SMOKE.md):
+
+```sh
+sh warmth/run_matched.sh seed --run warmth/runs/mac_curated_v1 --input warmth/data/curated_smoke_v1.jsonl --per-category 5
+```
+
+Pass that same `--run` to all subsequent stages. This assistant-authored set replaces flawed generated base scenarios; it does not replace independent review of their warmth rewrites.
+
 Preferred when curated data are available:
 
 ```sh
