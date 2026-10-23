@@ -548,6 +548,7 @@ def select(a):
     path=a.run/'selection.json'
     selection=dict(key=key,layer=a.layer,method=a.method,collection_signature=bundle['collection_signature'],
                    strengths=a.strengths,random_controls=a.random_controls,max_tokens=a.max_tokens,
+                   steer_first_token=a.steer_first_token,
                    note='Explicit user selection after validation review; never selected by test diagnostics.')
     lock(path,selection)
     print('Locked',path)
@@ -571,10 +572,12 @@ def steer(a):
         selected=read(a.run/'selection.json')
         expected=dict(key=key,layer=a.layer,method=a.method,collection_signature=cfg['signature'],
                       strengths=a.strengths,random_controls=a.random_controls,max_tokens=a.max_tokens,
+                      steer_first_token=a.steer_first_token,
                       note=selected['note'])
         if selected!=expected:raise ValueError('Test settings differ from locked selection')
     v=b['vectors'][key];settings=dict(key=key,split=a.split,strengths=a.strengths,
          random_controls=a.random_controls,max_tokens=a.max_tokens,seed=a.seed,collection_signature=cfg['signature'],
+         steer_first_token=a.steer_first_token,vector_l2_norm=float(v.norm()),
          vector_sha=sha(v.numpy().tobytes()),intervention_sha=sha(inspect.getsource(old.Runner.generate).encode()))
     folder=a.run/('generations_'+hash_json(settings)[:12]);folder.mkdir(parents=True,exist_ok=True)
     lock(folder/'settings.json',settings)
@@ -667,7 +670,9 @@ def check(a):
         raise ValueError('Zero-hook or condition-order equivalence failed')
     if r.model.model.layers[a.layer-1]._forward_hooks:
         raise ValueError('Leaked hooks')
-    save(a.run/'sanity_checks.json',dict(batch_max_absolute_errors=errors,zero_hook_equal=True,
+    sanity_name='sanity_checks_first_token.json' if a.steer_first_token else 'sanity_checks.json'
+    save(a.run/sanity_name,dict(batch_max_absolute_errors=errors,zero_hook_equal=True,
+         steer_first_token=a.steer_first_token,method=a.method,layer=a.layer,
          baseline_after_intervention_equal=True,collection=cfg,
          caveat='BF16 batching comparison uses rtol=atol=0.03; short greedy checks are necessary, not sufficient.'))
     print('Real-model sanity checks passed.')
@@ -686,6 +691,8 @@ def parser():
     p.add_argument('--rewrite-v2',action='store_true',help='Use calibrated rewrite prompt and pairwise review protocol in a fresh run')
     p.add_argument('--layers',type=int,nargs='+',default=[12,16,20]);p.add_argument('--layer',type=int,default=16)
     p.add_argument('--method',choices=['last','anchor','mean'],default='last')
+    p.add_argument('--steer-first-token',action='store_true',
+                   help='Also shift the final prompt position, affecting the first generated token')
     p.add_argument('--max-length',type=int,default=1536);p.add_argument('--max-tokens',type=int,default=512)
     p.add_argument('--suffix',default='\n\n[End of response]')
     p.add_argument('--bootstrap',type=int,default=200)

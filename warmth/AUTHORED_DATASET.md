@@ -1,5 +1,8 @@
 # Directly authored warmth pilot
 
+After the initial pilot, use [the broader strength/first-token comparison](STRENGTH_SWEEP.md)
+to test intervention strength and timing without rebuilding this dataset.
+
 `data/authored_warmth_v1.jsonl` contains 30 scenarios and **90 complete responses**,
 authored directly by the assistant. There is no model generation step or Qwen approval
 gate. Each record contains the actual responses as well as their openings and shared
