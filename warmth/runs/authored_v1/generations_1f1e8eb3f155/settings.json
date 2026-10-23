@@ -1,0 +1,18 @@
+{
+  "key": "anchor_16",
+  "split": "validation",
+  "strengths": [
+    -2.0,
+    -1.0,
+    1.0,
+    2.0
+  ],
+  "random_controls": 2,
+  "max_tokens": 768,
+  "seed": 42,
+  "collection_signature": "f4378e5959ab2a535e369e7d5bb7ab070138a27b40d3b232cf91e6c544020acb",
+  "steer_first_token": true,
+  "vector_l2_norm": 0.8240170478820801,
+  "vector_sha": "b33281171b046463818245fbdd0990c2b0a9570d022b3acd9ce4586cc64d50dc",
+  "intervention_sha": "4bf16d35df0236fb9fc1c046280a780fad7f85e7383b8a82fa46fbd70d217082"
+}
