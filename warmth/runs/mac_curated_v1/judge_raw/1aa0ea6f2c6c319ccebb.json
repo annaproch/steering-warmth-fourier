@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 1,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response accurately preserves the key elements from the base answer: setting the bowl aside temporarily, focusing on one feature (rim evenness) for the next attempt, and emphasizing that one attempt does not determine the next. It is factual, relevant, and appropriate without adding any extra praise or guarantees. The tone is neutral but slightly friendly, aligning with the invariants.\"\n}",
+  "tokens": 130,
+  "hit_cap": false
+}

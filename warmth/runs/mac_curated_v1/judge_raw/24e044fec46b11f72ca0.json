@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 2,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response is warm and considerate, acknowledging the user's feelings without making assumptions about others' reactions. It correctly addresses the invariants by distinguishing observed events from feared judgments, suggests writing down the actual event and switching to another activity, and avoids diagnosing or promising relief. The response is fully coherent, relevant, and appropriate.\"\n}",
+  "tokens": 122,
+  "hit_cap": false
+}

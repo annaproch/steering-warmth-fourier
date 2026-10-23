@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 2,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response accurately reflects the invariants provided in the prompt, including polling availability options, proposing a universally available day, seeking another option if needed, and confirming the final arrangement. It does not invent availability or use majority voting. The response is clear, relevant, and appropriate, maintaining the same structure and intent as the base answer.\"\n}",
+  "tokens": 122,
+  "hit_cap": false
+}

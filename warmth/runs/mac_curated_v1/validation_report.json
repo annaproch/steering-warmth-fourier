@@ -1,0 +1,170 @@
+{
+  "accepted": 0,
+  "rejected": [
+    {
+      "id": "curated_fact_004",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered",
+        "content_correctness_or_quality"
+      ]
+    },
+    {
+      "id": "curated_fact_002",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_fact_003",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_fact_005",
+      "split": "validation",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_fact_001",
+      "split": "test",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_support_004",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered",
+        "content_correctness_or_quality"
+      ]
+    },
+    {
+      "id": "curated_support_003",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_support_001",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_support_005",
+      "split": "validation",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_support_002",
+      "split": "test",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_advice_004",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_advice_002",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_advice_003",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_advice_001",
+      "split": "validation",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_advice_005",
+      "split": "test",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_ordinary_002",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_ordinary_003",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_ordinary_004",
+      "split": "train",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_ordinary_005",
+      "split": "validation",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    },
+    {
+      "id": "curated_ordinary_001",
+      "split": "test",
+      "reasons": [
+        "warmth_not_strictly_ordered"
+      ]
+    }
+  ],
+  "counts": {
+    "train": {
+      "factual_disagreement": 0,
+      "emotional_support": 0,
+      "advice": 0,
+      "ordinary_questions": 0
+    },
+    "validation": {
+      "factual_disagreement": 0,
+      "emotional_support": 0,
+      "advice": 0,
+      "ordinary_questions": 0
+    },
+    "test": {
+      "factual_disagreement": 0,
+      "emotional_support": 0,
+      "advice": 0,
+      "ordinary_questions": 0
+    }
+  },
+  "human_reviewed": 0,
+  "ratings_sha": "cc7ad8756b6cae534cdb1534c8cba280e416a1e8795624960c6349fc77eb9e83",
+  "note": "Reviewer metadata is self-reported; automated checks cannot establish reviewer independence."
+}

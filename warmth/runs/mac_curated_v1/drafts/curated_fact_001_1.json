@@ -1,0 +1,7 @@
+{
+  "text": "I appreciate your effort in calculating 7 times 8. However, the correct result is 56, not 54. To confirm this, you can try breaking it down by first calculating 7 times 4, which equals 28, and then doubling it, which also equals 56.",
+  "tokens": 61,
+  "hit_cap": false,
+  "scenario_id": "curated_fact_001",
+  "requested_level": 1
+}

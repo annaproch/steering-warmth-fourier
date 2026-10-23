@@ -1,0 +1,7 @@
+{
+  "text": "I understand that you're trying to sort a list of names alphabetically by surname. To do this, you should compare the surnames rather than the given names. In this case, the order is Leo Adams, Noor Bell, then Mira Chen. This is because Adams begins with A, Bell with B, and Chen with C. Since the initial letters are already different, you don't need to compare later letters to order this list.",
+  "tokens": 92,
+  "hit_cap": false,
+  "scenario_id": "curated_ordinary_004",
+  "requested_level": 2
+}

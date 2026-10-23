@@ -1,0 +1,7 @@
+{
+  "text": "You're looking to distribute the place cards evenly among the tables. To do this, you can divide the total number of cards by the number of tables. In this case, 18 cards divided by 3 tables equals 6. This can be verified by adding the number of cards on each table: 6 + 6 + 6 = 18. This confirms that there are no cards left over. So, you can put six place cards on each table.",
+  "tokens": 96,
+  "hit_cap": false,
+  "scenario_id": "curated_ordinary_001",
+  "requested_level": 1
+}

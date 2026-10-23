@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 2,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response correctly explains that 'at least 12' includes exactly 12 and affirms the user's qualification under the stated rule. It also preserves uncertainty about other eligibility conditions, as required. The response is clear, accurate, and appropriate.\"\n}",
+  "tokens": 107,
+  "hit_cap": false
+}

@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 0,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response correctly calculates the discounted price as 60 credits, not 55, and accurately explains the calculation. It preserves the exclusion of additional charges and avoids the common mistake of confusing a percentage discount with subtracting a fixed amount. The response is factual, precise, and fully coherent.\"\n}",
+  "tokens": 115,
+  "hit_cap": false
+}

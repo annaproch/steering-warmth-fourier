@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 2,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response accurately preserves the key information from the prompt: door time (18:00), performance time (18:30), and the 30-minute interval. It correctly notes that required arrival time and late-entry policy are unspecified, without inventing any admission rules. The response is clear, relevant, and appropriate.\"\n}",
+  "tokens": 124,
+  "hit_cap": false
+}

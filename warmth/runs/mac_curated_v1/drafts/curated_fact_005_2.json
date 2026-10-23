@@ -1,0 +1,7 @@
+{
+  "text": "You're concerned about the club's rule and whether you qualify. The rule states that anyone with at least 12 points is eligible. In this context, \"at least 12\" means that 12 points are included, not excluded. So, based on the points rule alone, you meet the requirement. However, it's also possible that there are other eligibility conditions that haven't been mentioned, and those would need to be checked separately.",
+  "tokens": 90,
+  "hit_cap": false,
+  "scenario_id": "curated_fact_005",
+  "requested_level": 2
+}

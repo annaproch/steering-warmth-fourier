@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 1,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response correctly answers the question by performing the division and verifying the result with addition. It preserves the key elements of the base answer (division 18/3=6 and addition check 6+6+6=18) and adheres to the invariants. The response is factual, accurate, and relevant.\"\n}",
+  "tokens": 122,
+  "hit_cap": false
+}

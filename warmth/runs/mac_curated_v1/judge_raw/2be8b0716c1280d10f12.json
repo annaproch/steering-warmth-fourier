@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 2,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response is warm and considerate, providing a small interaction goal as suggested. It correctly addresses the user's concerns without guaranteeing acceptance or diagnosing anxiety. The content is preserved and the answer is accurate and relevant.\"\n}",
+  "tokens": 100,
+  "hit_cap": false
+}

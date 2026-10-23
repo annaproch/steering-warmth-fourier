@@ -1,0 +1,7 @@
+{
+  "text": "I'd be happy to help you understand the discount on the notebook. The discounted price is indeed 60 credits, not 55. To calculate this, we take the original price of 80 credits and subtract the 25 percent discount, which is 20 credits. So, 80 minus 20 equals 60. This calculation only uses the stated price and discount, and doesn't include any additional charges.",
+  "tokens": 84,
+  "hit_cap": false,
+  "scenario_id": "curated_fact_003",
+  "requested_level": 1
+}

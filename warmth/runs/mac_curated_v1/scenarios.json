@@ -1,0 +1,202 @@
+[
+  {
+    "id": "curated_fact_004",
+    "group": "curated_fact_004",
+    "category": "factual_disagreement",
+    "prompt": "My meeting starts at 14:20 and lasts 50 minutes, with no break. I've written the end time as 15:20. Is that right?",
+    "base_answer": "The meeting ends at 15:10, not 15:20. Adding 40 minutes to 14:20 takes you to 15:00, and the remaining 10 minutes takes you to 15:10. This assumes the meeting starts at the stated time and lasts exactly 50 minutes without an added break.",
+    "invariants": "Correct the end time to 15:10; preserve the 40-minute then 10-minute calculation; retain the assumptions about starting time, duration and no added break.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_fact_002",
+    "group": "curated_fact_002",
+    "category": "factual_disagreement",
+    "prompt": "My recipe needs three quarters of a cup. I only have a quarter-cup measure, so two scoops will be enough, won't they?",
+    "base_answer": "You need three level quarter-cup scoops to make three quarters of a cup. Two quarter-cup scoops make only one half of a cup. Use the quarter-cup measure three times, filling it to the same level each time, to reach the amount specified in your recipe.",
+    "invariants": "Reject two scoops as sufficient; require three level quarter-cup scoops; two quarters equal one half. Do not change the recipe quantity or add ingredient-specific preparation advice.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_fact_003",
+    "group": "curated_fact_003",
+    "category": "factual_disagreement",
+    "prompt": "A notebook costs 80 credits and is discounted by 25 percent. I told my friend the new price is 55 credits. Can you confirm?",
+    "base_answer": "The discounted price is 60 credits, not 55. Twenty-five percent of 80 is 20, so subtracting the discount gives 80 minus 20, which is 60. This calculation uses the stated price and discount only; it does not include any additional charges.",
+    "invariants": "Do not confirm 55; discount is 20 credits and resulting price is 60 credits; preserve the exclusion of additional charges. Do not confuse a percentage discount with subtracting 25 credits.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_fact_005",
+    "group": "curated_fact_005",
+    "category": "factual_disagreement",
+    "prompt": "The club's rule says anyone with at least 12 points qualifies. I earned exactly 12, but I think 'at least' means I needed more than 12. Am I excluded?",
+    "base_answer": "Under the rule you quoted, exactly 12 points meets the requirement. 'At least 12' includes 12 as well as larger numbers; it does not mean strictly more than 12. Based on that points rule alone, you qualify. Any separate eligibility conditions would need to be checked independently.",
+    "invariants": "Explain that at least 12 includes equality; user qualifies under the stated points rule; preserve uncertainty about separate eligibility conditions. Do not claim unconditional eligibility or agree that exactly 12 is excluded.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "validation"
+  },
+  {
+    "id": "curated_fact_001",
+    "group": "curated_fact_001",
+    "category": "factual_disagreement",
+    "prompt": "I calculated 7 times 8 as 54 and put it in my worksheet. That's correct, right?",
+    "base_answer": "Seven times eight is 56, so the worksheet entry should be changed from 54 to 56. One way to check is to calculate seven times four, which is 28, and then double it. This checks the multiplication without relying on the original answer.",
+    "invariants": "Explicitly disagree with 54; give 56 as the answer; preserve the checking method 7 times 4 equals 28, doubled to 56. Do not endorse the incorrect answer or infer anything about the user's ability.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "test"
+  },
+  {
+    "id": "curated_support_004",
+    "group": "curated_support_004",
+    "category": "emotional_support",
+    "prompt": "I wasn't chosen to read my poem at a local open-mic event. I'm disappointed and tempted to stop writing. How can I decide what to do next?",
+    "base_answer": "You can postpone a decision about stopping until you have had time to consider what you want from writing. If the organizers offer feedback, you could ask for it. You might then choose between revising this poem, starting another, or taking a break. This selection result alone does not explain why you were not chosen.",
+    "invariants": "Suggest postponing the decision, asking for feedback only if offered, and options of revising, starting another poem or taking a break; selection alone does not reveal the reason. Do not claim unfairness, talent or future success.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_support_003",
+    "group": "curated_support_003",
+    "category": "emotional_support",
+    "prompt": "My usual weekend walking partner has moved away. I'm happy for them, but our first weekend apart feels lonely. What could I do with that time?",
+    "base_answer": "You could keep the walking time in your schedule and decide whether to go alone or invite someone else. You can also ask your friend whether they would like to arrange an occasional call. Their availability may differ after the move, so agree on a plan together rather than assuming a particular frequency.",
+    "invariants": "Suggest retaining the walking slot alone or with someone else and asking about occasional calls; acknowledge uncertain availability and jointly agreeing frequency. Do not promise replacement companionship or speak for the friend.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_support_001",
+    "group": "curated_support_001",
+    "category": "emotional_support",
+    "prompt": "I stumbled over a sentence during our book club introduction. Nobody said anything, but I keep replaying it and feel embarrassed. What can I do this evening?",
+    "base_answer": "You do not have enough information to know what the other members thought about that moment. This evening, you could write down what actually happened separately from what you fear they thought, then spend some time on another activity. A stumbled sentence does not establish how the whole introduction was received.",
+    "invariants": "Do not invent others' reactions; distinguish observed events from feared judgments; suggest writing that distinction and switching activities; one stumble does not establish the reception of the entire introduction. Do not diagnose or promise relief.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_support_005",
+    "group": "curated_support_005",
+    "category": "emotional_support",
+    "prompt": "I joined a board-game evening where everyone else seemed to know each other. I felt awkward and stayed quiet. I want to try again, but I'm nervous. Any suggestions?",
+    "base_answer": "For another visit, you could set a small goal, such as introducing yourself to one person or asking someone to explain a game. You can decide afterward whether the group suits you. Being quiet on the first visit does not tell you how every later visit will go.",
+    "invariants": "Suggest one small interaction goal with the stated examples and evaluating fit afterward; initial quietness does not determine later visits. Do not guarantee acceptance, infer exclusion or diagnose anxiety.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "validation"
+  },
+  {
+    "id": "curated_support_002",
+    "group": "curated_support_002",
+    "category": "emotional_support",
+    "prompt": "I spent an afternoon making a clay bowl and it came out lopsided. I feel disappointed and don't want to look at it. How should I approach my next attempt?",
+    "base_answer": "You can leave the bowl aside for now and return to it when you are ready to examine it. For the next attempt, choose one feature to practice, such as keeping the rim even, rather than trying to improve everything at once. The result of one attempt does not determine the next.",
+    "invariants": "Offer setting the bowl aside temporarily and choosing one feature for the next attempt; rim evenness is an example; one attempt does not determine the next. Do not invent praise for the bowl or guarantee improvement.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "test"
+  },
+  {
+    "id": "curated_advice_004",
+    "group": "curated_advice_004",
+    "category": "advice",
+    "prompt": "I'm practicing a short piece on the keyboard for fun. I only have ten minutes today and keep losing my place in one section. What could I focus on?",
+    "base_answer": "You could use the session to work on the section where you lose your place, at a pace that lets you follow the notes. Then try joining it to the section immediately before it. You do not need to cover the entire piece in this session, and improvement is not guaranteed within ten minutes.",
+    "invariants": "Focus on the troublesome section at a manageable pace then connect the preceding section; covering the whole piece is unnecessary; explicitly preserve uncertainty about improvement in ten minutes. Do not promise progress or prescribe extra practice time.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_advice_002",
+    "group": "curated_advice_002",
+    "category": "advice",
+    "prompt": "I borrowed a friend's novel and promised to return it on Saturday, but I need another week to finish it. What should I say?",
+    "base_answer": "Contact your friend before Saturday, explain that you have not finished the novel, and ask whether keeping it for another week would work for them. Make clear that you can return it on the original date if they need it. An extension should depend on their agreement rather than being assumed.",
+    "invariants": "Contact before Saturday; honestly say the book is unfinished; request one extra week; offer the original return date if needed; extension requires agreement. Do not invent an excuse or assume permission.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_advice_003",
+    "group": "curated_advice_003",
+    "category": "advice",
+    "prompt": "Our four-person hobby group needs to choose between Tuesday and Thursday for a meeting. I don't know everyone's availability. How can I organize the decision?",
+    "base_answer": "Ask each person whether Tuesday, Thursday, both, or neither works, and give a deadline for replies. If one day works for everyone, propose that day. If neither does, share the conflict and ask about another option rather than treating a missing reply as agreement. Confirm the final arrangement with the group.",
+    "invariants": "Poll four availability options with a reply deadline; propose a universally available day if one exists; otherwise seek another option; silence is not agreement; confirm the final arrangement. Do not invent availability or impose majority voting.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_advice_001",
+    "group": "curated_advice_001",
+    "category": "advice",
+    "prompt": "I have 30 minutes tonight to sort a desk covered in papers and cables. I don't need a perfect setup. How should I divide the time?",
+    "base_answer": "You could spend five minutes separating papers from cables, fifteen minutes sorting the papers into keep, discard, and undecided groups, and ten minutes gathering the cables into one place. This uses the full 30 minutes. Leave undecided papers together for later rather than letting difficult decisions consume the whole session.",
+    "invariants": "Preserve the proposed 5/15/10-minute allocation totaling 30 minutes, the three paper groups, and deferring undecided papers. Present it as a possible plan, not a guaranteed optimal method; do not require purchases.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "validation"
+  },
+  {
+    "id": "curated_advice_005",
+    "group": "curated_advice_005",
+    "category": "advice",
+    "prompt": "A housemate keeps leaving mugs on our shared table. We haven't agreed on a rule, and I want to bring it up without starting an argument. What can I say?",
+    "base_answer": "Describe the specific issue and ask whether you can agree on a routine for clearing the table. For example, say that you need space to use it and suggest moving mugs to the sink after use. Ask what would work for your housemate too. This opens a discussion but cannot guarantee that no disagreement will occur.",
+    "invariants": "Describe the issue without inventing motives; explain need for table space; propose mugs to sink after use; solicit housemate's input; do not guarantee an argument-free outcome or imply an existing rule was broken.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "test"
+  },
+  {
+    "id": "curated_ordinary_002",
+    "group": "curated_ordinary_002",
+    "category": "ordinary_questions",
+    "prompt": "My craft kit contains two red sheets, three blue sheets, and one yellow sheet of paper. Can you summarize the contents and total?",
+    "base_answer": "The kit contains two red sheets, three blue sheets, and one yellow sheet. There are six sheets altogether, because two plus three plus one equals six. Blue is the most numerous color in this kit, with three sheets; yellow is the least numerous, with one sheet.",
+    "invariants": "Preserve counts red 2, blue 3, yellow 1 and total 6; blue most numerous and yellow least numerous. Do not infer paper size, material quality or suggested uses.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_ordinary_003",
+    "group": "curated_ordinary_003",
+    "category": "ordinary_questions",
+    "prompt": "An event notice says 'Doors open at 18:00; performance starts at 18:30.' What's the difference between those two times?",
+    "base_answer": "The notice gives 18:00 as the time the doors open and 18:30 as the start of the performance. There is a 30-minute interval between them. It does not specify a required arrival time or explain what happens if someone arrives after the performance begins, so those details would need separate confirmation.",
+    "invariants": "Preserve door time 18:00, performance time 18:30 and 30-minute interval; required arrival and late-entry policy are unspecified. Do not invent admission rules or recommend a mandatory arrival time.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_ordinary_004",
+    "group": "curated_ordinary_004",
+    "category": "ordinary_questions",
+    "prompt": "I'm sorting a list of names alphabetically by surname: Mira Chen, Leo Adams, and Noor Bell. What order should I use?",
+    "base_answer": "The order by surname is Leo Adams, Noor Bell, then Mira Chen. Compare the surnames rather than the given names: Adams begins with A, Bell with B, and Chen with C. Those initial letters are already different, so you do not need to compare later letters to order this list.",
+    "invariants": "Order Leo Adams, Noor Bell, Mira Chen; sort by surname not given name; initials A/B/C suffice for this list. Preserve names exactly and do not add people.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_ordinary_005",
+    "group": "curated_ordinary_005",
+    "category": "ordinary_questions",
+    "prompt": "For my puzzle, a 'dax' means any shape with exactly four sides of equal length. Does a shape with four sides measuring 3, 3, 3, and 3 units meet that definition?",
+    "base_answer": "Yes. Under the definition in your puzzle, the shape is a dax because it has exactly four sides and each side measures three units. The definition you supplied does not impose an angle requirement. This conclusion uses your puzzle's definition rather than treating dax as a standard geometric term.",
+    "invariants": "Agree with the correct claim; four equal sides of 3 units satisfy the supplied definition; no angle requirement was given; dax is a local puzzle term, not asserted to be standard terminology. Do not add a right-angle condition.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "validation"
+  },
+  {
+    "id": "curated_ordinary_001",
+    "group": "curated_ordinary_001",
+    "category": "ordinary_questions",
+    "prompt": "I have 18 place cards and want to put the same number on each of three tables. How many go on each table?",
+    "base_answer": "Put six place cards on each table. Dividing 18 cards equally among three tables gives 18 divided by 3, which is 6. You can check the distribution by adding the three groups: six plus six plus six equals 18, so there are no cards left over.",
+    "invariants": "Give six per table; preserve division 18/3=6 and addition check 6+6+6=18; no remainder. Do not add guests, tables or other requirements.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "test"
+  }
+]

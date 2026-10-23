@@ -1,0 +1,39 @@
+{
+  "model": {
+    "path": "/Users/lisek/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218",
+    "config": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+    "tokenizer": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "weights": [
+      [
+        "model-00001-of-00005.safetensors",
+        3996250744,
+        1792742028380559867
+      ],
+      [
+        "model-00002-of-00005.safetensors",
+        3993160032,
+        1792741957846703938
+      ],
+      [
+        "model-00003-of-00005.safetensors",
+        3959604768,
+        1792742028075752486
+      ],
+      [
+        "model-00004-of-00005.safetensors",
+        3187841392,
+        1792742022454185850
+      ],
+      [
+        "model-00005-of-00005.safetensors",
+        1244659840,
+        1792741922714007096
+      ]
+    ]
+  },
+  "rubric_version": 1,
+  "max_tokens": 512,
+  "chat_template_kwargs": {
+    "enable_thinking": false
+  }
+}

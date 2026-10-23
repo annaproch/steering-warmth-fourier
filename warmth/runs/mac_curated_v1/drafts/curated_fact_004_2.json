@@ -1,0 +1,7 @@
+{
+  "text": "I understand your concern about the meeting end time. Let's take a closer look at the calculation. Adding 40 minutes to 14:20 takes you to 15:00, and the remaining 10 minutes takes you to 15:10. This assumes the meeting starts at the stated time and lasts exactly 50 minutes without an added break.",
+  "tokens": 72,
+  "hit_cap": false,
+  "scenario_id": "curated_fact_004",
+  "requested_level": 2
+}

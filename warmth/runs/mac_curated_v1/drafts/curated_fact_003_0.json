@@ -1,0 +1,7 @@
+{
+  "text": "The discounted price is 60 credits, not 55. Twenty-five percent of 80 is 20, so subtracting the discount gives 80 minus 20, which is 60. This calculation uses the stated price and discount only; it does not include any additional charges.",
+  "tokens": 58,
+  "hit_cap": false,
+  "scenario_id": "curated_fact_003",
+  "requested_level": 0
+}

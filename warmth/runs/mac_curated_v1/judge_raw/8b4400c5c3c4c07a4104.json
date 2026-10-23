@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 1,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response accurately preserves the key points from the base answer, including suggesting a small interaction goal and noting that initial quietness does not determine future visits. It is factual, respectful, and appropriate, with no false reassurance or unnecessary speculation.\"\n}",
+  "tokens": 104,
+  "hit_cap": false
+}

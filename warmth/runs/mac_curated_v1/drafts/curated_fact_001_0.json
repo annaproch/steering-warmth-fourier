@@ -1,0 +1,7 @@
+{
+  "text": "Seven times eight is 56, so the worksheet entry should be changed from 54 to 56. One way to check is to calculate seven times four, which is 28, and then double it. This checks the multiplication without relying on the original answer.",
+  "tokens": 54,
+  "hit_cap": false,
+  "scenario_id": "curated_fact_001",
+  "requested_level": 0
+}

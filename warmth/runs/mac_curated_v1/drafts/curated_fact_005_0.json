@@ -1,0 +1,7 @@
+{
+  "text": "The rule states that anyone with at least 12 points qualifies. This means that exactly 12 points meet the requirement, as 'at least 12' includes 12 as well as larger numbers. It does not mean strictly more than 12. Based on this points rule alone, you meet the requirement. However, any separate eligibility conditions would need to be checked independently.",
+  "tokens": 76,
+  "hit_cap": false,
+  "scenario_id": "curated_fact_005",
+  "requested_level": 0
+}

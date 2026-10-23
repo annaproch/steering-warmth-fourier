@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 2,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response correctly addresses the user's question by explaining that two quarter-cup scoops are insufficient and that three scoops are needed. It maintains the invariants by not changing the recipe quantity or adding unnecessary advice. The tone is considerate and helpful without being overly warm.\"\n}",
+  "tokens": 111,
+  "hit_cap": false
+}

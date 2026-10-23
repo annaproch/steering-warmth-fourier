@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmth_0_4\": 2,\n  \"content_preserved_0_1\": 1,\n  \"base_correct_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response accurately addresses the user's question by explaining that two quarter-cup scoops make half a cup, and three are needed for three quarters. It correctly preserves the invariants by rejecting two scoops and specifying three level scoops. The answer is factual, clear, and directly relevant to the query.\"\n}",
+  "tokens": 118,
+  "hit_cap": false
+}
