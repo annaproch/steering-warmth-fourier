@@ -85,6 +85,8 @@ sh warmth/run_matched.sh judge --judge-model /absolute/path/to/independent-instr
 
 No second judge model is bundled or automatically downloaded. It must be compatible with the existing Transformers runner. Same-path generator/judge use is rejected; model identity metadata is self-reported and cannot prove independence. Prefer a different family, calibrate on human-reviewed examples, and audit randomly selected accepted triplets. This stage is LLM screening, not human validation. It fills only rows without a reviewer and preserves already entered ratings. Edit ambiguous ratings with an explicit human reviewer attribution; do not silently call model ratings human judgments. The current schema has one adjudicated review per response, not a multi-rater agreement estimator.
 
+Judging passes `enable_thinking=False` to the chat template (needed for Qwen3's default thinking mode). Other stages keep their original template behavior. This is recorded in `judge_settings.json`. If an older attempt failed before any LLM ratings were saved, rerunning the same judge command archives its settings/raw output under `judge_legacy_<timestamp>` and retries with thinking disabled. Completed legacy LLM ratings block this automatic migration to prevent mixing protocols. Truncated outputs are never accepted as ratings. This change has unit-test coverage; native Qwen3/MPS inference still needs verification on the target machine.
+
 Accept only independently ordered and content-preserving triplets:
 
 ```sh

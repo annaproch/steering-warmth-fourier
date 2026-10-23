@@ -148,8 +148,10 @@ class Runner:
             raise ValueError('Layer outside model')
 
     def prompt(self, text):
+        template_kwargs = getattr(self.a, 'chat_template_kwargs', {})
         s = self.tok.apply_chat_template([{'role':'system','content':SYSTEM},
-                    {'role':'user','content':text}], tokenize=False, add_generation_prompt=True)
+                    {'role':'user','content':text}], tokenize=False, add_generation_prompt=True,
+                    **template_kwargs)
         return self.tok.encode(s, add_special_tokens=False)
 
     def encode_row(self, row):
