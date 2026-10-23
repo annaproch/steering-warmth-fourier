@@ -209,10 +209,15 @@ class Runner:
             raise ValueError('Generation would exceed the model context window')
         handle = None
         if delta is not None:
+            first_forward = True
             def hook(m, inp, out):
+                nonlocal first_forward
                 h = out[0] if isinstance(out, tuple) else out
-                # Response-token intervention only; the first token is unsteered.
-                if h.shape[1] != 1:
+                is_prefill = first_forward
+                first_forward = False
+                # Optional last-prompt-position shift affects the first generated
+                # token. Never modify every position in the prompt.
+                if is_prefill and not getattr(self.a, 'steer_first_token', False):
                     return out
                 h = h.clone()
                 h[:, -1] += delta.to(h)

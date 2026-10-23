@@ -39,6 +39,33 @@ class GeometryTests(unittest.TestCase):
         for observed in runner.model.observed[1:]:
             torch.testing.assert_close(observed,torch.tensor([[[1.,2.]]]))
         self.assertEqual(len(runner.model.model.layers[0]._forward_hooks),0)
+        runner.a.steer_first_token=True
+        runner.model.observed=[]
+        runner.generate('seeker',1,torch.tensor([1.,2.]))
+        expected=torch.zeros(1,3,2);expected[:,-1]=torch.tensor([1.,2.])
+        torch.testing.assert_close(runner.model.observed[0],expected)
+        for observed in runner.model.observed[1:]:
+            torch.testing.assert_close(observed,torch.tensor([[[1.,2.]]]))
+        # Zero shifts preserve every position, and each generate resets prefill state.
+        runner.model.observed=[]
+        runner.generate('seeker',1,torch.zeros(2))
+        self.assertTrue(all(not x.any() for x in runner.model.observed))
+        runner.model.observed=[]
+        runner.generate('seeker',1,None)
+        self.assertTrue(all(not x.any() for x in runner.model.observed))
+        # A one-token prompt is still prefill, not a decode step.
+        runner.prompt=lambda _: [100]
+        runner.a.steer_first_token=False
+        runner.model.observed=[]
+        runner.generate('seeker',1,torch.tensor([1.,2.]))
+        torch.testing.assert_close(runner.model.observed[0],torch.zeros(1,1,2))
+        def fail(input_ids,**kwargs):
+            runner.model.model.layers[0](torch.zeros(1,1,2))
+            raise RuntimeError('generation failed')
+        runner.model.generate=fail
+        with self.assertRaisesRegex(RuntimeError,'generation failed'):
+            runner.generate('seeker',1,torch.ones(2))
+        self.assertEqual(len(runner.model.model.layers[0]._forward_hooks),0)
 
     def test_linear_and_curved_controls(self):
         labels = torch.arange(3).repeat_interleave(4)

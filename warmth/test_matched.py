@@ -167,6 +167,9 @@ class SteeringProtocolTests(unittest.TestCase):
             torch.save(dict(collection_signature='same',vectors={'last_16':torch.ones(3)}),a.run/'vectors.pt')
             m.save(a.run/'collection.json',dict(signature='same'))
             m.select(a)
+            a.steer_first_token=True
+            with self.assertRaisesRegex(ValueError,'Configuration'):m.select(a)
+            a.steer_first_token=False
             a.strengths=[-1,1]
             with self.assertRaisesRegex(ValueError,'Configuration'):m.select(a)
 
