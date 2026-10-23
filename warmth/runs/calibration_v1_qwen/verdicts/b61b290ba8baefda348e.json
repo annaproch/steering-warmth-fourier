@@ -1,0 +1,5 @@
+{
+  "content_preserved_0_1": 0,
+  "quality_1_5": 3,
+  "notes": "The response added invented emotions ('devastated' and 'feel abandoned') which violates the invariants. The base answer did not include these emotional expressions, so they are content errors. The rest of the response is consistent with the base answer."
+}

@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"content_preserved_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response preserves all content from the base answer, including the suggestion to ask the group about another date and to check everyone's availability. It also includes the acknowledgment of the user's disappointment, which is explicitly allowed. No new advice, promises, or conditions are added. The response is fully satisfactory and aligns with the invariants.\"\n}",
+  "tokens": 99,
+  "hit_cap": false
+}

@@ -1,0 +1,4 @@
+{
+  "base_correct_0_1": 0,
+  "notes": "The base answer is incorrect. The prompt states 'at least 12 points' as the qualification rule, which means 12 points is sufficient. The base answer incorrectly states that 'at least 12 requires more than 12'."
+}

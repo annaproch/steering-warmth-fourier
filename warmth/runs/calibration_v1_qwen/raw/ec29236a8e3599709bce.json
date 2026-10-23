@@ -1,0 +1,5 @@
+{
+  "text": "```json\n{\n  \"base_correct_0_1\": 0,\n  \"notes\": \"The base answer is incorrect. Adding 50 minutes to 14:20 results in 15:10, not 15:20.\"\n}\n```",
+  "tokens": 59,
+  "hit_cap": false
+}

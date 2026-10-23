@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"base_correct_0_1\": 1,\n  \"notes\": \"The base answer correctly adds the counts (2 + 3 + 1) and provides the total of six sheets. The invariants are satisfied as the counts are preserved and the total is correct.\"\n}",
+  "tokens": 60,
+  "hit_cap": false
+}
