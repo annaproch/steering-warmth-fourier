@@ -398,7 +398,7 @@ def collection_settings(a):
 
 def collect(a):
     rows = read(a.run/'accepted.json')
-    if not rows: raise ValueError('No independently accepted triplets; run review and validate first')
+    if not rows: raise ValueError('No triplets prepared for collection; validate reviewed drafts or import authored data')
     cfg = collection_settings(a); sig=hash_json(cfg)
     cache = a.run/'cache'/sig;cache.mkdir(parents=True,exist_ok=True)
     save(a.run/'collection.json',dict(signature=sig,settings=cfg))
