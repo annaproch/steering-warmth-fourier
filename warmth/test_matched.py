@@ -9,6 +9,40 @@ import matched as m
 
 
 class MatchedTests(unittest.TestCase):
+    def test_judge_template_switch_does_not_change_default_prompts(self):
+        from unittest.mock import Mock
+        r=object.__new__(m.old.Runner)
+        r.a=SimpleNamespace()
+        r.tok=Mock()
+        r.tok.apply_chat_template.return_value='formatted prompt'
+        r.prompt('question')
+        self.assertNotIn('enable_thinking',r.tok.apply_chat_template.call_args.kwargs)
+        r.a.chat_template_kwargs={'enable_thinking':False}
+        r.prompt('question')
+        self.assertIs(r.tok.apply_chat_template.call_args.kwargs['enable_thinking'],False)
+
+    def test_failed_legacy_judge_migration(self):
+        from unittest.mock import patch
+        with tempfile.TemporaryDirectory() as td:
+            a=m.parser().parse_args(['judge','--run',td,'--judge-model','/judge'])
+            m.save(a.run/'draft_settings.json',{'model':{'path':'/writer'}})
+            m.write_csv(a.run/'review.csv',['reviewer','reviewer_kind'],
+                        [{'reviewer':'','reviewer_kind':''}])
+            legacy=dict(model={'path':'/judge'},rubric_version=1,max_tokens=a.max_tokens)
+            m.save(a.run/'judge_settings.json',legacy)
+            m.save(a.run/'judge_raw'/'failed.json',{'hit_cap':True})
+            with patch.object(m,'model_id',return_value={'path':'/judge'}), \
+                 patch.object(m,'runner',side_effect=RuntimeError('stop before model')):
+                with self.assertRaisesRegex(RuntimeError,'stop before model'):m.judge(a)
+            self.assertEqual(m.read(a.run/'judge_settings.json')['chat_template_kwargs'],
+                             {'enable_thinking':False})
+            self.assertEqual(len(list(a.run.glob('judge_legacy_*/judge_raw/failed.json'))),1)
+            m.save(a.run/'judge_settings.json',legacy)
+            m.write_csv(a.run/'review.csv',['reviewer','reviewer_kind'],
+                        [{'reviewer':'previous judge','reviewer_kind':'llm'}])
+            with patch.object(m,'model_id',return_value={'path':'/judge'}):
+                with self.assertRaisesRegex(ValueError,'Configuration changed'):m.judge(a)
+
     def scenarios(self, n=5):
         return [dict(id=f'{c}_{i}',group=f'{c}_{i}',category=c,prompt=f'{c} question {i}',
                      base_answer='A correct base answer.',invariants='Keep the answer.')
