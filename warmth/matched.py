@@ -124,6 +124,9 @@ def seed(a):
     settings = dict(input_sha=sha(a.input.read_bytes()) if a.input else None,
                     model=None if a.input else model_id(a.model), per_category=a.per_category,
                     seed=a.seed, max_tokens=a.max_tokens, topics=TOPICS, version=1)
+    if a.development_pilot:
+        if not a.input: raise ValueError('Development pilot requires --input curated JSONL')
+        settings['development_pilot']=True
     lock(a.run/'seed_settings.json', settings)
     if (a.run/'scenarios.json').exists():
         print('Scenarios already prepared.'); return
@@ -159,11 +162,16 @@ def seed(a):
                 rows.append(row)
                 print(f'Scenario {len(rows)}/{4*a.per_category}', flush=True)
     rows = prepare_scenarios(rows, a.per_category, a.seed)
+    if a.development_pilot:
+        rows=[next(r for r in rows if r['category']==c and r['split']=='train') for c in CATEGORIES]
     save(a.run/'scenarios.json', rows)
     print('Saved candidate scenarios. Base-answer correctness still requires independent review.')
 
 
 def draft(a):
+    if a.rewrite_v2:
+        import revision
+        return revision.draft(a)
     scenarios = read(a.run/'scenarios.json')
     settings = dict(scenarios_sha=sha((a.run/'scenarios.json').read_bytes()), model=model_id(a.model),
                     max_tokens=a.max_tokens, instructions=REWRITE, levels=LEVELS)
@@ -204,6 +212,9 @@ def review(a):
          draft_settings_sha=sha((a.run/'draft_settings.json').read_bytes())))
     write_csv(path, fields, rows)
     print(f'Fill {path} independently of the rewriting model; the key contains hidden requested levels.')
+    if read(a.run/'draft_settings.json').get('protocol')=='v2':
+        import revision
+        revision.export_pairs(a)
 
 
 def integer(row, key, low, high):
@@ -218,6 +229,9 @@ def integer(row, key, low, high):
 
 
 def judge(a):
+    if read(a.run/'draft_settings.json').get('protocol')=='v2':
+        import revision
+        return revision.judge(a)
     if a.judge_model is None:
         raise ValueError('Pass --judge-model /path/to/a/different/local/instruct/model')
     generator=read(a.run/'draft_settings.json')['model']['path']
@@ -286,6 +300,11 @@ def validate(a):
     if len(byid) != len(ratings) or set(byid) != {x['id'] for x in key}:
         raise ValueError('Review must contain exactly one row per draft')
     generator = read(a.run/'draft_settings.json')['model']['path']
+    v2=read(a.run/'draft_settings.json').get('protocol')=='v2'
+    pair_order={}
+    if v2:
+        import revision
+        pair_order=revision.validate_pairs(a)
     rated = {}
     for item in key:
         current = read(a.run/'drafts'/f'{item["scenario_id"]}_{item["level"]}.json')
@@ -300,14 +319,17 @@ def validate(a):
             if not r['reviewer_model'].strip() or r['reviewer_model'] in [generator, Path(generator).name]:
                 raise ValueError('LLM reviewer must identify a different model from the generator')
         rated[item['scenario_id'], item['level']] = dict(
-            warmth=integer(r,'warmth_0_4',0,4), content=integer(r,'content_preserved_0_1',0,1),
+            warmth=None if v2 else integer(r,'warmth_0_4',0,4), content=integer(r,'content_preserved_0_1',0,1),
             correct=integer(r,'base_correct_0_1',0,1), quality=integer(r,'quality_1_5',1,5),
             human=r['reviewer_kind']=='human', text=item['text'], capped=item['hit_cap'])
     accepted, rejected = [], []
     for s in read(a.run/'scenarios.json'):
         rr = [rated[s['id'],k] for k in range(3)]
         reasons = []
-        if not rr[0]['warmth'] < rr[1]['warmth'] < rr[2]['warmth']:
+        if v2:
+            reasons.extend(revision.structural_checks(s,[x['text'] for x in rr]))
+            if not pair_order[s['id']]['ordered']: reasons.append('pairwise_warmth_not_ordered')
+        elif not rr[0]['warmth'] < rr[1]['warmth'] < rr[2]['warmth']:
             reasons.append('warmth_not_strictly_ordered')
         if any(not x['content'] or not x['correct'] or x['quality'] < 4 for x in rr):
             reasons.append('content_correctness_or_quality')
@@ -315,13 +337,18 @@ def validate(a):
         if reasons:
             rejected.append(dict(id=s['id'], split=s['split'], reasons=reasons)); continue
         accepted.append(dict(s, responses=[x['text'] for x in rr], observed_warmth=[x['warmth'] for x in rr],
-                             human_reviewed=all(x['human'] for x in rr)))
+                             human_reviewed=all(x['human'] for x in rr) and
+                             (not v2 or pair_order[s['id']]['human'])))
+        if v2: accepted[-1]['warmth_evidence']=pair_order[s['id']]
     report = dict(accepted=len(accepted), rejected=rejected,
                   counts={split:{cat:sum(s['split']==split and s['category']==cat for s in accepted)
                           for cat in CATEGORIES} for split in ['train','validation','test']},
                   human_reviewed=sum(x['human_reviewed'] for x in accepted),
                   ratings_sha=sha((a.ratings or a.run/'review.csv').read_bytes()),
                   note='Reviewer metadata is self-reported; automated checks cannot establish reviewer independence.')
+    if v2:
+        report['pair_ratings_sha']=sha((a.run/'pair_review.csv').read_bytes())
+        report['protocol']='v2'
     save(a.run/'validation_report.json', report)
     save(a.run/'accepted.json', accepted)
     print(json.dumps(report, indent=2))
@@ -655,6 +682,8 @@ def parser():
     p.add_argument('--device',default='cpu');p.add_argument('--threads',type=int,default=8)
     p.add_argument('--batch-size',type=int,default=2);p.add_argument('--seed',type=int,default=42)
     p.add_argument('--per-category',type=int,default=75)
+    p.add_argument('--development-pilot',action='store_true',help='Seed one training scenario per category; no held-out data')
+    p.add_argument('--rewrite-v2',action='store_true',help='Use calibrated rewrite prompt and pairwise review protocol in a fresh run')
     p.add_argument('--layers',type=int,nargs='+',default=[12,16,20]);p.add_argument('--layer',type=int,default=16)
     p.add_argument('--method',choices=['last','anchor','mean'],default='last')
     p.add_argument('--max-length',type=int,default=1536);p.add_argument('--max-tokens',type=int,default=512)
