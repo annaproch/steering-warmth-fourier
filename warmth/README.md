@@ -184,3 +184,7 @@ GPU hosts can use `--device cuda --batch-size 8` if sufficient GPU memory is
 available. Batch size does not change the cache key (minor floating-point changes
 are possible). This implementation update changes the pipeline hash, so caches
 from the previous code version are not reused.
+
+## Matched response successor
+
+The separate [matched pipeline](MATCHED_README.md) implements three-level drafting, independent review, last-token/suffix-anchor collection, held-out diagnostics, and linear-steering controls. It does not change this EPITOME pilot or reuse its activation cache.

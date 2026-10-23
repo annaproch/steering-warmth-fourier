@@ -1,0 +1,4 @@
+# CPU-tested versions; native macOS/MPS must pass the documented sanity checks.
+torch==2.14.0
+transformers==5.17.0
+matplotlib>=3.10,<4
