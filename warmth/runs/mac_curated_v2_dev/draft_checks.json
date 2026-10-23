@@ -1,0 +1,44 @@
+[
+  {
+    "id": "curated_fact_004",
+    "base_words": 43,
+    "words": [
+      43,
+      34,
+      48
+    ],
+    "reasons": [
+      "length_outside_20_percent"
+    ]
+  },
+  {
+    "id": "curated_support_004",
+    "base_words": 55,
+    "words": [
+      53,
+      61,
+      64
+    ],
+    "reasons": []
+  },
+  {
+    "id": "curated_advice_004",
+    "base_words": 54,
+    "words": [
+      48,
+      54,
+      51
+    ],
+    "reasons": []
+  },
+  {
+    "id": "curated_ordinary_002",
+    "base_words": 46,
+    "words": [
+      44,
+      55,
+      43
+    ],
+    "reasons": []
+  }
+]

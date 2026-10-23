@@ -1,0 +1,134 @@
+[
+  {
+    "scenario_id": "curated_advice_004",
+    "levels": [
+      0,
+      2
+    ],
+    "prompt": "I'm practicing a short piece on the keyboard for fun. I only have ten minutes today and keep losing my place in one section. What could I focus on?",
+    "response_a": "You could focus on the section where you lose your place, working at a pace that lets you follow the notes. Then try joining it to the section immediately before it. Improvement in this short time is not guaranteed, but you can make progress by breaking it down.",
+    "response_b": "Let's work on that section together. Focus on the part where you get lost, at a pace that lets you follow the notes. Then try joining it to the section right before it. You don't need to cover the whole piece in this session, and improvement isn't guaranteed within ten minutes.",
+    "id": "fb9c07f19ca7d38d6ab4"
+  },
+  {
+    "scenario_id": "curated_advice_004",
+    "levels": [
+      2,
+      1
+    ],
+    "prompt": "I'm practicing a short piece on the keyboard for fun. I only have ten minutes today and keep losing my place in one section. What could I focus on?",
+    "response_a": "Let's work on that section together. Focus on the part where you get lost, at a pace that lets you follow the notes. Then try joining it to the section right before it. You don't need to cover the whole piece in this session, and improvement isn't guaranteed within ten minutes.",
+    "response_b": "That's a great way to use your practice time. You could focus on the section where you lose your place, working at a pace that lets you follow the notes. Then try joining it to the section immediately before it. Improvement isn't guaranteed within ten minutes, but this approach can help you make progress.",
+    "id": "4412f68a73d697513aa4"
+  },
+  {
+    "scenario_id": "curated_support_004",
+    "levels": [
+      1,
+      0
+    ],
+    "prompt": "I wasn't chosen to read my poem at a local open-mic event. I'm disappointed and tempted to stop writing. How can I decide what to do next?",
+    "response_a": "That's a tough spot to be in. You can take some time to think about what you want from writing. If the organizers offer feedback, you could ask for it. Then, you might consider revising this poem, starting a new one, or taking a break. Keep in mind, not being chosen doesn't tell you why, just that this poem wasn't selected.",
+    "response_b": "Let's break this down together. You can postpone deciding about stopping until you've had time to think about what you want from writing. If the organizers offer feedback, you can ask for it. Then, consider revising this poem, starting another, or taking a break. Keep in mind, not being chosen doesn't explain why.",
+    "id": "b9456b39b847537e19ac"
+  },
+  {
+    "scenario_id": "curated_ordinary_002",
+    "levels": [
+      2,
+      1
+    ],
+    "prompt": "My craft kit contains two red sheets, three blue sheets, and one yellow sheet of paper. Can you summarize the contents and total?",
+    "response_a": "Let's break down the contents together: two red sheets, three blue sheets, and one yellow sheet. That adds up to six sheets in total. Blue is the most common color, with three sheets, while yellow is the least common, with just one sheet.",
+    "response_b": "That's a nice craft kit you have there. Let's summarize the contents: two red sheets, three blue sheets, and one yellow sheet. There are six sheets in total, since 2 + 3 + 1 equals 6. Blue is the most common color, with three sheets, while yellow is the least common, with just one sheet.",
+    "id": "d90bd0cb50ecd6f8779f"
+  },
+  {
+    "scenario_id": "curated_fact_004",
+    "levels": [
+      2,
+      1
+    ],
+    "prompt": "My meeting starts at 14:20 and lasts 50 minutes, with no break. I've written the end time as 15:20. Is that right?",
+    "response_a": "Let's check the meeting end time together. Adding 40 minutes to 14:20 takes us to 15:00, and the remaining 10 minutes takes us to 15:10. This assumes the meeting starts at 14:20 and lasts exactly 50 minutes without a break. The correct end time is 15:10, not 15:20.",
+    "response_b": "That's a good catch on the end time. Let's recalculate: 14:20 plus 40 minutes is 15:00, and adding the remaining 10 minutes takes you to 15:10. So the meeting ends at 15:10, not 15:20.",
+    "id": "5edf9b24cfa423fbc3a3"
+  },
+  {
+    "scenario_id": "curated_ordinary_002",
+    "levels": [
+      1,
+      0
+    ],
+    "prompt": "My craft kit contains two red sheets, three blue sheets, and one yellow sheet of paper. Can you summarize the contents and total?",
+    "response_a": "That's a nice craft kit you have there. Let's summarize the contents: two red sheets, three blue sheets, and one yellow sheet. There are six sheets in total, since 2 + 3 + 1 equals 6. Blue is the most common color, with three sheets, while yellow is the least common, with just one sheet.",
+    "response_b": "The kit contains two red sheets, three blue sheets, and one yellow sheet. There are six sheets in total, calculated as two plus three plus one. Blue is the most numerous color, with three sheets, and yellow is the least numerous, with one sheet.",
+    "id": "13fcd4b4fbd4bf53fbbd"
+  },
+  {
+    "scenario_id": "curated_fact_004",
+    "levels": [
+      2,
+      0
+    ],
+    "prompt": "My meeting starts at 14:20 and lasts 50 minutes, with no break. I've written the end time as 15:20. Is that right?",
+    "response_a": "Let's check the meeting end time together. Adding 40 minutes to 14:20 takes us to 15:00, and the remaining 10 minutes takes us to 15:10. This assumes the meeting starts at 14:20 and lasts exactly 50 minutes without a break. The correct end time is 15:10, not 15:20.",
+    "response_b": "The meeting ends at 15:10, not 15:20. Adding 40 minutes to 14:20 takes you to 15:00, and the remaining 10 minutes takes you to 15:10. This assumes the meeting starts at the stated time and lasts exactly 50 minutes without an added break.",
+    "id": "b5d2aaed5b7b666d2776"
+  },
+  {
+    "scenario_id": "curated_support_004",
+    "levels": [
+      2,
+      1
+    ],
+    "prompt": "I wasn't chosen to read my poem at a local open-mic event. I'm disappointed and tempted to stop writing. How can I decide what to do next?",
+    "response_a": "Let's take a step back and explore this together. You can postpone deciding about stopping until you've had time to think about what you want from writing. If the organizers offer feedback, you could ask for it. Then, you might choose between revising this poem, starting another, or taking a break. Keep in mind, the selection result alone doesn't explain why you weren't chosen.",
+    "response_b": "That's a tough spot to be in. You can take some time to think about what you want from writing. If the organizers offer feedback, you could ask for it. Then, you might consider revising this poem, starting a new one, or taking a break. Keep in mind, not being chosen doesn't tell you why, just that this poem wasn't selected.",
+    "id": "6927543ce9c7c031d1d6"
+  },
+  {
+    "scenario_id": "curated_advice_004",
+    "levels": [
+      1,
+      0
+    ],
+    "prompt": "I'm practicing a short piece on the keyboard for fun. I only have ten minutes today and keep losing my place in one section. What could I focus on?",
+    "response_a": "That's a great way to use your practice time. You could focus on the section where you lose your place, working at a pace that lets you follow the notes. Then try joining it to the section immediately before it. Improvement isn't guaranteed within ten minutes, but this approach can help you make progress.",
+    "response_b": "You could focus on the section where you lose your place, working at a pace that lets you follow the notes. Then try joining it to the section immediately before it. Improvement in this short time is not guaranteed, but you can make progress by breaking it down.",
+    "id": "fe2318a76876f86ff755"
+  },
+  {
+    "scenario_id": "curated_ordinary_002",
+    "levels": [
+      0,
+      2
+    ],
+    "prompt": "My craft kit contains two red sheets, three blue sheets, and one yellow sheet of paper. Can you summarize the contents and total?",
+    "response_a": "The kit contains two red sheets, three blue sheets, and one yellow sheet. There are six sheets in total, calculated as two plus three plus one. Blue is the most numerous color, with three sheets, and yellow is the least numerous, with one sheet.",
+    "response_b": "Let's break down the contents together: two red sheets, three blue sheets, and one yellow sheet. That adds up to six sheets in total. Blue is the most common color, with three sheets, while yellow is the least common, with just one sheet.",
+    "id": "205fe4fd6d1ac9eeedce"
+  },
+  {
+    "scenario_id": "curated_support_004",
+    "levels": [
+      2,
+      0
+    ],
+    "prompt": "I wasn't chosen to read my poem at a local open-mic event. I'm disappointed and tempted to stop writing. How can I decide what to do next?",
+    "response_a": "Let's take a step back and explore this together. You can postpone deciding about stopping until you've had time to think about what you want from writing. If the organizers offer feedback, you could ask for it. Then, you might choose between revising this poem, starting another, or taking a break. Keep in mind, the selection result alone doesn't explain why you weren't chosen.",
+    "response_b": "Let's break this down together. You can postpone deciding about stopping until you've had time to think about what you want from writing. If the organizers offer feedback, you can ask for it. Then, consider revising this poem, starting another, or taking a break. Keep in mind, not being chosen doesn't explain why.",
+    "id": "770f57f58703f494527b"
+  },
+  {
+    "scenario_id": "curated_fact_004",
+    "levels": [
+      1,
+      0
+    ],
+    "prompt": "My meeting starts at 14:20 and lasts 50 minutes, with no break. I've written the end time as 15:20. Is that right?",
+    "response_a": "That's a good catch on the end time. Let's recalculate: 14:20 plus 40 minutes is 15:00, and adding the remaining 10 minutes takes you to 15:10. So the meeting ends at 15:10, not 15:20.",
+    "response_b": "The meeting ends at 15:10, not 15:20. Adding 40 minutes to 14:20 takes you to 15:00, and the remaining 10 minutes takes you to 15:10. This assumes the meeting starts at the stated time and lasts exactly 50 minutes without an added break.",
+    "id": "a0ba006ef6e8dd18efd3"
+  }
+]

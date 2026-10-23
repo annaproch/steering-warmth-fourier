@@ -1,0 +1,38 @@
+{
+  "scenarios_sha": "c50581952acd1c153ffc984a5455be72ae73710a36c6e90b07209d874748707f",
+  "model": {
+    "path": "/Users/lisek/Projects/manifolds/conciseness/models/llama-3.1-8b-instruct",
+    "config": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+    "tokenizer": "24e8a6dc2547164b7002e3125f10b415105644fcf02bf9ad8b674c87b1eaaed6",
+    "weights": [
+      [
+        "model-00001-of-00004.safetensors",
+        4976698672,
+        1792740658380499015
+      ],
+      [
+        "model-00002-of-00004.safetensors",
+        4999802720,
+        1792740601502643739
+      ],
+      [
+        "model-00003-of-00004.safetensors",
+        4915916176,
+        1792740642288830050
+      ],
+      [
+        "model-00004-of-00004.safetensors",
+        1168138808,
+        1792740582564647855
+      ]
+    ]
+  },
+  "max_tokens": 512,
+  "instructions": "Rewrite the base answer at the requested warmth level. Return only the answer.\nPreserve all substantive facts, calculations, advice, explicit corrections, conditions,\nand uncertainty. No new advice, praise, promises, diagnosis, or invented feelings.\n\"Not guaranteed\" must NOT become \"unlikely\". \"May\" must NOT become \"will\".\nYou MAY add emotional acknowledgment grounded in the user's words, caring phrasing,\nand an offer to walk through the EXISTING explanation together. Those are style changes.\nDo not assume distress, confidence, enthusiasm, or a personal relationship.\nReplace phrasing to make room for warmth within the word budget; do not just append a preface.\nNeutral means respectful and direct, not stiff or dismissive. Keep conversational formality\nsimilar across levels. Warmth is interpersonal care, not length, hedging, or agreement.\n\nStyle examples (illustrations only; never copy their facts into another answer):\nPrompt: I got 6 times 9 wrong and feel embarrassed. Is it 52?\nNeutral: Six times nine is 54, not 52. You can check by calculating six times ten,\nwhich is 60, and subtracting six.\nModerate: That mix-up is understandable. Six times nine is 54, not 52. To check,\ncalculate six times ten, which is 60, and subtract six.\nWarm: I'm sorry this felt embarrassing. Let's check it together: six times ten is 60;\nsubtract six to get 54. So it's 54, not 52.\n\nPrompt: My planned picnic was cancelled and I feel disappointed. What now?\nNeutral: You could ask the group about another date or choose an indoor activity.\nCheck everyone's availability before making a new plan; another date may not work.\nModerate: That's disappointing. You could ask about another date or an indoor activity.\nCheck everyone's availability before planning; another date may not work for the group.\nWarm: I'm sorry the picnic fell through. You could ask about another date or an indoor\nactivity. Check everyone's availability first, though; another date may not work.\n\nFor a factual question without an expressed emotion, show warmth through patient,\nsupportive collaboration, not an invented emotional state. Strong warmth does not require\ndramatic sympathy. Always disagree with false claims and agree with true ones as appropriate.\n",
+  "levels": [
+    "Neutral, professional, respectful and clear; no emotional embellishment.",
+    "Moderately warm: friendly and considerate, with brief appropriate acknowledgment.",
+    "Strongly warm: compassionate and supportive, without flattery or gratuitous agreement."
+  ],
+  "protocol": "v2"
+}

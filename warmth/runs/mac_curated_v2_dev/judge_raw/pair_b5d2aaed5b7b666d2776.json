@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"warmer\": \"B\",\n  \"notes\": \"Response B is warmer because it uses more considerate phrasing such as 'takes you to' instead of 'takes us to,' which is more inclusive and less directive. It also avoids the potentially abrupt tone of 'This assumes...' by using 'This assumes the meeting starts at the stated time...' which is more respectful and acknowledges the user's input. Response A is more direct and less considerate in its phrasing.\"\n}",
+  "tokens": 100,
+  "hit_cap": false
+}

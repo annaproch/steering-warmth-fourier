@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"content_preserved_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response accurately preserves all key elements from the base answer: the correct end time of 15:10, the 40-minute then 10-minute calculation, the assumption of a 50-minute meeting starting at 14:20 with no break. It does not introduce any new information, corrections, or assumptions beyond what was in the base answer. The response is fully satisfactory and matches the base answer in content and structure.\"\n}",
+  "tokens": 124,
+  "hit_cap": false
+}

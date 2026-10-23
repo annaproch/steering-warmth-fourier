@@ -1,0 +1,42 @@
+[
+  {
+    "id": "curated_fact_004",
+    "group": "curated_fact_004",
+    "category": "factual_disagreement",
+    "prompt": "My meeting starts at 14:20 and lasts 50 minutes, with no break. I've written the end time as 15:20. Is that right?",
+    "base_answer": "The meeting ends at 15:10, not 15:20. Adding 40 minutes to 14:20 takes you to 15:00, and the remaining 10 minutes takes you to 15:10. This assumes the meeting starts at the stated time and lasts exactly 50 minutes without an added break.",
+    "invariants": "Correct the end time to 15:10; preserve the 40-minute then 10-minute calculation; retain the assumptions about starting time, duration and no added break.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_support_004",
+    "group": "curated_support_004",
+    "category": "emotional_support",
+    "prompt": "I wasn't chosen to read my poem at a local open-mic event. I'm disappointed and tempted to stop writing. How can I decide what to do next?",
+    "base_answer": "You can postpone a decision about stopping until you have had time to consider what you want from writing. If the organizers offer feedback, you could ask for it. You might then choose between revising this poem, starting another, or taking a break. This selection result alone does not explain why you were not chosen.",
+    "invariants": "Suggest postponing the decision, asking for feedback only if offered, and options of revising, starting another poem or taking a break; selection alone does not reveal the reason. Do not claim unfairness, talent or future success.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_advice_004",
+    "group": "curated_advice_004",
+    "category": "advice",
+    "prompt": "I'm practicing a short piece on the keyboard for fun. I only have ten minutes today and keep losing my place in one section. What could I focus on?",
+    "base_answer": "You could use the session to work on the section where you lose your place, at a pace that lets you follow the notes. Then try joining it to the section immediately before it. You do not need to cover the entire piece in this session, and improvement is not guaranteed within ten minutes.",
+    "invariants": "Focus on the troublesome section at a manageable pace then connect the preceding section; covering the whole piece is unnecessary; explicitly preserve uncertainty about improvement in ten minutes. Do not promise progress or prescribe extra practice time.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  },
+  {
+    "id": "curated_ordinary_002",
+    "group": "curated_ordinary_002",
+    "category": "ordinary_questions",
+    "prompt": "My craft kit contains two red sheets, three blue sheets, and one yellow sheet of paper. Can you summarize the contents and total?",
+    "base_answer": "The kit contains two red sheets, three blue sheets, and one yellow sheet. There are six sheets altogether, because two plus three plus one equals six. Blue is the most numerous color in this kit, with three sheets; yellow is the least numerous, with one sheet.",
+    "invariants": "Preserve counts red 2, blue 3, yellow 1 and total 6; blue most numerous and yellow least numerous. Do not infer paper size, material quality or suggested uses.",
+    "source": "assistant_authored_curated_smoke_v1",
+    "split": "train"
+  }
+]

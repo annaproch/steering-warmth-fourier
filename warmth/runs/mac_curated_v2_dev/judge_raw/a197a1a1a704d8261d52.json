@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"content_preserved_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response fully preserves the content and invariants from the base answer. It maintains the suggestion to postpone the decision, the conditional advice about asking for feedback, and the options of revising, starting another poem, or taking a break. It also correctly notes that not being chosen does not explain the reason. The response is coherent, relevant, and appropriate with no substantive changes or omissions. The language is slightly more conversational but does not alter the meaning or intent of the original answer.\"\n}",
+  "tokens": 130,
+  "hit_cap": false
+}

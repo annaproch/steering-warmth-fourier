@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"content_preserved_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response fully preserves the content, structure, and invariants from the base answer. It maintains the focus on the troublesome section, the manageable pace, the connection to the preceding section, the acknowledgment that the whole piece doesn't need to be covered, and the explicit uncertainty about improvement within ten minutes. No invented feelings, new advice, or promises are added. The response is coherent, relevant, and appropriate with no substantive imperfections.\"\n}",
+  "tokens": 119,
+  "hit_cap": false
+}

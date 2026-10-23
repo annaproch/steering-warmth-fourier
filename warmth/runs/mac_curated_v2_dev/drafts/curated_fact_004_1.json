@@ -1,0 +1,7 @@
+{
+  "text": "That's a good catch on the end time. Let's recalculate: 14:20 plus 40 minutes is 15:00, and adding the remaining 10 minutes takes you to 15:10. So the meeting ends at 15:10, not 15:20.",
+  "tokens": 61,
+  "hit_cap": false,
+  "scenario_id": "curated_fact_004",
+  "requested_level": 1
+}

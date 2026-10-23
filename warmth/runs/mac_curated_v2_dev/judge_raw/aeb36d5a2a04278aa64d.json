@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"content_preserved_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response perfectly preserves all content from the base answer, including the exact counts (red 2, blue 3, yellow 1), total (6), and the comparison of most and least numerous colors. It does not add, omit, or alter any information. The response is fully satisfactory and matches the base answer in all respects.\"\n}",
+  "tokens": 100,
+  "hit_cap": false
+}

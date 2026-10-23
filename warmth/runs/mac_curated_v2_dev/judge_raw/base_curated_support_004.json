@@ -1,0 +1,5 @@
+{
+  "text": "```json\n{\n  \"base_correct_0_1\": 1,\n  \"notes\": \"The base answer correctly suggests postponing the decision, mentions asking for feedback if offered, and provides options of revising, starting another poem, or taking a break. It also correctly states that the selection result alone does not reveal the reason. The answer does not claim unfairness, talent, or future success, aligning with the invariants.\"\n}\n```",
+  "tokens": 93,
+  "hit_cap": false
+}

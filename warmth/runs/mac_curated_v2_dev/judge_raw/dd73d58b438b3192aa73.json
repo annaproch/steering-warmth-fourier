@@ -1,0 +1,5 @@
+{
+  "text": "{\n  \"content_preserved_0_1\": 1,\n  \"quality_1_5\": 5,\n  \"notes\": \"The response accurately preserves all counts (red 2, blue 3, yellow 1) and total (6). It correctly identifies blue as the most numerous and yellow as the least numerous. No inferences about paper size, material quality, or suggested uses are made. The response is coherent, relevant, and appropriate with no imperfections.\"\n}",
+  "tokens": 101,
+  "hit_cap": false
+}

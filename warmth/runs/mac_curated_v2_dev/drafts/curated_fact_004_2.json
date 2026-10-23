@@ -1,0 +1,7 @@
+{
+  "text": "Let's check the meeting end time together. Adding 40 minutes to 14:20 takes us to 15:00, and the remaining 10 minutes takes us to 15:10. This assumes the meeting starts at 14:20 and lasts exactly 50 minutes without a break. The correct end time is 15:10, not 15:20.",
+  "tokens": 77,
+  "hit_cap": false,
+  "scenario_id": "curated_fact_004",
+  "requested_level": 2
+}

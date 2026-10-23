@@ -1,0 +1,26 @@
+{
+  "input_sha": "b4709bee8a4cc6677f5b7941b03173a35451445e4251b8e209f2ffb6708394b4",
+  "model": null,
+  "per_category": 5,
+  "seed": 42,
+  "max_tokens": 512,
+  "topics": [
+    "work",
+    "learning",
+    "friendship",
+    "family",
+    "hobbies",
+    "travel",
+    "technology",
+    "household tasks",
+    "communication",
+    "planning",
+    "nature",
+    "creativity",
+    "time management",
+    "community",
+    "everyday decisions"
+  ],
+  "version": 1,
+  "development_pilot": true
+}
