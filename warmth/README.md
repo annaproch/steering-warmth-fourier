@@ -7,8 +7,12 @@ implementation in `vendor/causalab`, commit
 implemented here because these are unpaired replies, unlike the conciseness
 pilot. Existing conciseness code and outputs are unchanged.
 
-Status: public data downloaded, 150-reply pilot prepared, synthetic tests passed.
-No Llama activation collection or generation has been run for this experiment.
+Status: the 150-reply pilot, Llama activation collection, and geometry fitting
+have run; steering generations are a partial snapshot. All 11 saved generations
+hit the token cap, and neither graded warmth control nor a spline advantage was
+demonstrated. See [results and interpretation](RESULTS_AND_NEXT_STEPS.md) for this
+EPITOME run and [recent learnings](RECENT_LEARNINGS.md) for the later generated
+and directly authored warmth experiments.
 
 ## Separate commands
 

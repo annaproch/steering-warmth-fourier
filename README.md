@@ -25,6 +25,36 @@ differences, but the tested layer-16 last-token and suffix-anchor interventions
 have not demonstrated convincing monotonic warmth control beyond random controls.
 There is no demonstrated warmth spline advantage or ODE steering implementation.
 
+## Experiments run and results
+
+These are small exploratory pilots, not reliable research findings. The table
+summarizes saved runs and notes; incomplete generations and qualitative assessments
+are identified explicitly. Follow the links for protocols, controls, and limitations.
+
+| Experiment | What was run | Result |
+| --- | --- | --- |
+| [Fourier weekday/month steering](fourier-steering/FINDINGS.md) | Harmonic-count and amplitude sweeps, with matched-dimensional PCA and random-direction controls. | Weekday steering reached **4/4 targets** with the full six-dimensional concept subspace at amplitude 1. Fourier and PCA performed essentially identically; random directions achieved **0/4**. Months required larger interventions. No Fourier-specific advantage was established for discrete targets. |
+| [Calendar composition controls](fourier-steering/FINDINGS.md) | Weekday and month edits applied together, followed by perturbation-magnitude matching. | Matching improved preservation of the primary answer to **12/12** in each direction. These were separate single-concept readouts, and secondary-edit potency was not reverified after rescaling, so this did **not establish joint control**. |
+| [Joint weekday/month donor patching](fourier-steering/results/joint_pilot/SUMMARY.md) | **144 patched trials** across layers 18/24/28, two output orders, and day/month/both edits. | No layer passed the donor gate. Patches could transfer the first answer while leaving the second tied to the source. The planned additive-versus-joint Fourier comparison **was not run**. |
+| [Shared-prefix branching](fourier-steering/results/branch_pilot/SUMMARY.md) | **192 interventions**, with separate weekday and month readouts from the edited prefix. | Compact residual patches achieved **0/144** paired successes; last-token cache replacement achieved **0/24**. Full-prefix cache replacement achieved **21/24**, reproducing donor behavior but not establishing a compact controller. No Fourier fit followed. |
+| [Conciseness spline pilot](conciseness/README.md) | Five prompted verbosity levels across 30 questions; training-only PCA and spline/line fits; partial donor and steering generations. | Test spline MSE beat the line (**0.000401 vs 0.000508**), but lost when the middle level was omitted (**0.001161 vs 0.000996**). Of 19 saved donor-gate outputs, 14 hit the token cap; **all six steering outputs were capped**. Reliable behavioral control remains unestablished. |
+| [EPITOME warmth pilot](warmth/RESULTS_AND_NEXT_STEPS.md) | Activation collection and spline/line fitting on 150 labeled replies, followed by partial steering runs at strengths 1 and 0.25. | Reconstruction gains were minimal; the spline slightly won on validation and lost on test. **All 11 saved generations were truncated**. Interventions often switched to refusal-style responses rather than producing graded warmth; no spline advantage was observed. |
+| [Generated warmth datasets](warmth/RECENT_LEARNINGS.md#dataset-construction) | A 20-scenario rewrite run, followed by a revised four-scenario pilot, with automated review. | Accepted **0/20** and **0/4** triplets respectively. Warmth ordering was unreliable; the first run also confounded warmth with verbosity. |
+| [Warmth-judge calibration](warmth/RECENT_LEARNINGS.md#judge-calibration) | Qwen3-8B evaluated 24 authored cases in 32 presentations, including reversed A/B warmth pairs. | **6/8** correctness, **7/8** content preservation, and **16/16** clear-warmth presentations; reversal consistency was **8/8 pairs**. These small, authored checks do not justify using the judge as the sole factual/content gate or establish sensitivity to subtle warmth differences. |
+| [Authored warmth steering](warmth/RECENT_LEARNINGS.md#causal-steering-results) | **30 triplets / 90 responses**, split 18/6/6 by scenario; activation diagnostics and two steering sweeps totaling **168 responses** on three validation prompts. | Held-out activation differences aligned with training directions, but layer-16 last-token and suffix-anchor steering showed **no convincing monotonic warmth effect beyond random controls**. Larger strengths and first-token steering did not resolve this. The first sweep capped 54/84 responses; the later sweep capped 0/84. |
+
+Interpretation and status cautions:
+
+- Early Fourier claims were corrected after finding fitting/test prompt overlap,
+  a month Nyquist-coefficient bug, and invalid interpretations of composition and
+  RMSNorm tests. The affected month K=6 results should be disregarded; see the
+  [critical review](fourier-steering/RESEARCH_REVIEW.md) and corrected findings.
+- Warmth behavior was assessed qualitatively, without completed blinded ratings
+  or significance tests. Authored warmth test steering remains untouched.
+- The proposed 300-triplet warmth dataset, mean-response steering follow-up,
+  and joint Fourier model comparison are plans, not completed results. There is
+  no demonstrated nonlinear-steering advantage in these pilots.
+
 ## Setup
 
 Run commands from the repository root. Use Python 3.12 or 3.13 and a virtual
@@ -190,4 +220,3 @@ The commands above use the active Python environment. The older
 interpreter; use the direct Python commands outside that container.
 `warmth/run_matched.sh` supports an active virtualenv, a local `.venv`, or
 an explicit `PYTHON_BIN`.
-
